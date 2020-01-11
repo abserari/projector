@@ -14,5 +14,17 @@ module.exports = appInfo => {
     password: '123456'
   };
 
+  // add your config here
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
+  
+  config.cors = {
+    origin: '*',//匹配规则  域名+端口  *则为全匹配
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  };
+
   return config;
 };

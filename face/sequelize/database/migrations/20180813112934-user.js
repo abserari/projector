@@ -7,6 +7,7 @@ module.exports = {
       id: { type: INTEGER, primaryKey: true, autoIncrement: true },
       name: STRING(30),
       age: INTEGER,
+      imagepath: STRING(100),
       created_at: DATE,
       updated_at: DATE,
     });

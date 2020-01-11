@@ -162,3 +162,24 @@ hostname: ArideMacBook-Air.local
 pid: 45467
 hostname: ArideMacBook-Air.local
 
+2020-01-11 21:18:09,055 ERROR 46391 nodejs.ReferenceError: result is not defined
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/face.js:33:24
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 46391
+hostname: ArideMacBook-Air.local
+
+2020-01-11 21:18:14,793 ERROR 46391 nodejs.ReferenceError: result is not defined
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/face.js:33:24
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 46391
+hostname: ArideMacBook-Air.local
+
+2020-01-11 22:42:55,247 ERROR 50066 nodejs.TypeError: Assignment to constant variable.
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/image.js:31:10
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+pid: 50066
+hostname: ArideMacBook-Air.local
+

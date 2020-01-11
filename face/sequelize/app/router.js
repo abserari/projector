@@ -2,6 +2,7 @@
 
 module.exports = app => {
   app.resources('users', '/users', app.controller.user);
-  app.resources('image', '/image', app.controller.image);
-  app.get('/face/add',app.controller.face.add);
+  app.router.post('/image', app.controller.image.index)
+  app.router.post('/image/add', app.controller.image.add)
+  app.router.post('/image/destroy', app.controller.image.destroy)
 };

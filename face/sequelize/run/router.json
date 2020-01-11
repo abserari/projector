@@ -96,10 +96,9 @@
     ]
   },
   {
-    "name": "images",
+    "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
     "path": "/image",
@@ -111,12 +110,23 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
-    "path": "/face/add",
-    "regexp": "/^\\/face\\/add(?:\\/(?=$))?$/",
+    "path": "/image/add",
+    "regexp": "/^\\/image\\/add(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/image/destroy",
+    "regexp": "/^\\/image\\/destroy(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

@@ -11,7 +11,7 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "type": "ctoken",
         "ignoreJSON": false,
         "useSession": false,
@@ -156,6 +156,10 @@
       "username": "root",
       "password": "<String len: 6>"
     },
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
     "env": "local",
     "name": "sequelize-example",
     "keys": "<String len: 35>",
@@ -174,7 +178,9 @@
       "dependencies": {
         "@alicloud/pop-core": "^1.7.9",
         "egg": "^2.10.0",
+        "egg-cors": "^2.2.3",
         "egg-sequelize": "^5.0.1",
+        "emitter-io": "^1.39.0",
         "mysql2": "^1.6.1"
       },
       "devDependencies": {
@@ -457,6 +463,17 @@
       "from": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/plugin.js",
       "path": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-sequelize@5.2.1@egg-sequelize",
       "version": "5.2.1"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/plugin.js",
+      "path": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-cors@2.2.3@egg-cors",
+      "version": "2.2.3"
     }
   }
 }

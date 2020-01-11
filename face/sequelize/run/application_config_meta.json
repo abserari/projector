@@ -8,18 +8,9 @@
     "password": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
     "username": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-sequelize@5.2.1@egg-sequelize/config/config.default.js"
   },
-  "session": {
-    "maxAge": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "key": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "httpOnly": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
-    "encrypt": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js"
-  },
   "security": {
-    "domainWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
     "csrf": {
-      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
       "type": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
       "ignoreJSON": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
       "useSession": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
@@ -30,6 +21,9 @@
       "queryName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
       "refererWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
     },
+    "domainWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
     "xframe": {
       "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
       "value": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
@@ -67,6 +61,16 @@
       "ipBlackList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
       "checkAddress": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
     }
+  },
+  "cors": {
+    "origin": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "allowMethods": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "key": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "httpOnly": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "encrypt": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js"
   },
   "helper": {
     "shtml": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
@@ -169,7 +173,9 @@
     "dependencies": {
       "@alicloud/pop-core": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-cors": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-sequelize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "emitter-io": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "mysql2": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
     },
     "devDependencies": {
