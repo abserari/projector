@@ -2,13 +2,13 @@
 
 const Controller = require('egg').Controller;
 const Core = require('@alicloud/pop-core');
-
+const ec = require('emitter-io').connect()
 const groups = "workers"
 class ImageInfoController extends Controller {
   async index() {
     // 1. get image path
     const ctx = this.ctx;
-
+    var id = 1
     //  2. use aliyun api detect image person id
     const client = new Core({
       accessKeyId: 'LTAI4FcUTY6C6mReK4Eq8Bqz',
@@ -29,19 +29,35 @@ class ImageInfoController extends Controller {
     client.request('RecognizeFace', params, requestOption).then(async (result) => {
       // console.log(result)
       // 3. get personinfo from person id
-      ctx.body = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
+      console.log(id)
+    
+      const userinfo = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
+
+      // publish a message to the chat channel
+      ec.publish({
+        key: "ms4GqyLupd4yrJqBciqKnJreS7xNrWWx",
+        channel: "personinfo",
+        message: userinfo
+      });
+
     }, (ex) => {
       console.log(ex);
     })
 
+    ec.subscribe({
+      key: "ms4GqyLupd4yrJqBciqKnJreS7xNrWWx",
+      channel: "personinfo"
+    });
+    // on every message, print it out
+    ec.on('message', function (msg) {
+      console.log(msg.asString());
+    });
+
     // 4. notify caller wait for info on emitter channel
     ctx.status = 200;
     ctx.body = {
-      "please subscribe this channel to receive notifications": channel
+      "please subscribe this channel to receive notifications": "personinfo"
     }
-
-    // ctx.status = 200
-    // ctx.body = 
 
   }
 
@@ -51,7 +67,7 @@ class ImageInfoController extends Controller {
     const client = new Core({
       accessKeyId: 'LTAI4FcUTY6C6mReK4Eq8Bqz',
       accessKeySecret: 'WWwUZiaub9v17retzjuF6AmxcuEJ38',
-      endpoint: 'https://face.cn-shanghai.aliyuncs.com', // 注意修改这里
+      endpoint: 'https://face.cn-shanghai.aliyuncs.com',
       apiVersion: '2018-12-03'
     });
 
@@ -86,7 +102,7 @@ class ImageInfoController extends Controller {
     const client = new Core({
       accessKeyId: 'LTAI4FcUTY6C6mReK4Eq8Bqz',
       accessKeySecret: 'WWwUZiaub9v17retzjuF6AmxcuEJ38',
-      endpoint: 'https://face.cn-shanghai.aliyuncs.com', // 注意修改这里
+      endpoint: 'https://face.cn-shanghai.aliyuncs.com',
       apiVersion: '2018-12-03'
     });
 
@@ -95,7 +111,6 @@ class ImageInfoController extends Controller {
       "Person": ctx.queries.person[0],
       "Image": "front"
     }
-
 
     const requestOption = {
       method: 'POST'

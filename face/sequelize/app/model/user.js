@@ -10,6 +10,7 @@ module.exports = app => {
       autoIncrement: true,
     },
     name: STRING(30),
+    imagepath: STRING(100),
     age: INTEGER,
     created_at: DATE,
     updated_at: DATE,
