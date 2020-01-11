@@ -1,0 +1,350 @@
+2020-01-11 15:41:42,066 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 15:42:15,785 INFO 36411 [egg-sequelize](22ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 15:42:15,803 INFO 36411 [egg-sequelize](38ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 15:44:04,663 INFO 36411 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 15:44:04,679 WARN 36411 [-/127.0.0.1/-/81ms GET /users/show] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 36411
+hostname: ArideMacBook-Air.local
+
+2020-01-11 15:44:16,080 INFO 36411 [egg-sequelize](12ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 15:44:16,082 WARN 36411 [-/127.0.0.1/-/41ms GET /users/index] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 36411
+hostname: ArideMacBook-Air.local
+
+2020-01-11 15:44:27,229 INFO 36411 [egg-sequelize](6ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 15:44:27,232 INFO 36411 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:09:41,288 INFO 36411 [egg-sequelize](17ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:09:41,290 INFO 36411 [egg-sequelize](19ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:45,662 INFO 36411 [egg-sequelize](44ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:45,677 INFO 36411 [egg-sequelize](56ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:52,582 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:52,584 INFO 36411 [egg-sequelize](5ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:54,738 INFO 36411 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:54,739 INFO 36411 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:55,741 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:55,742 INFO 36411 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:56,121 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:56,121 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:56,762 INFO 36411 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:56,764 INFO 36411 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:57,050 INFO 36411 [egg-sequelize](4ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:57,051 INFO 36411 [egg-sequelize](5ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:10:57,662 INFO 36411 [egg-sequelize](2ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:10:57,663 INFO 36411 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:19:24,227 INFO 39638 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:20:44,436 INFO 39688 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:34:33,654 INFO 40280 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:34:50,466 INFO 40280 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 16:34:50,471 INFO 40280 [egg-sequelize](15ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 16:39:27,227 INFO 40427 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:40:10,337 INFO 40468 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:40:26,503 INFO 40489 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:43:15,742 INFO 40599 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:43:18,365 ERROR 40599 [-/127.0.0.1/-/11ms GET /image] nodejs.ReferenceError: id is not defined
+    at ImageInfoController.index (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/image.js:37:8)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:11)
+
+pid: 40599
+hostname: ArideMacBook-Air.local
+
+2020-01-11 16:43:29,889 ERROR 40599 [-/127.0.0.1/-/0ms GET /image] nodejs.ReferenceError: id is not defined
+    at ImageInfoController.index (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/image.js:37:8)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:11)
+
+pid: 40599
+hostname: ArideMacBook-Air.local
+
+2020-01-11 16:43:32,853 ERROR 40599 [-/127.0.0.1/-/2ms GET /image] nodejs.ReferenceError: id is not defined
+    at ImageInfoController.index (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/image.js:37:8)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:11)
+
+pid: 40599
+hostname: ArideMacBook-Air.local
+
+2020-01-11 16:43:37,057 INFO 40628 [egg-sequelize](9ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:43:53,838 INFO 40628 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 16:45:20,701 INFO 40692 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:45:49,036 INFO 40721 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:50:47,264 INFO 40909 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:51:43,704 INFO 40909 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 16:52:18,756 INFO 40966 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:52:24,483 INFO 40966 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 16:54:00,386 INFO 41037 [egg-sequelize](7ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:54:50,454 INFO 41087 [egg-sequelize](6ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:54:52,030 INFO 41087 [egg-sequelize](26ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 16:55:25,483 INFO 41112 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 16:55:26,185 INFO 41112 [egg-sequelize](16ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 20:34:21,950 INFO 44632 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:34:29,329 INFO 44634 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:35:57,637 INFO 44693 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:36:29,168 INFO 44693 [egg-sequelize](16ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 20:36:29,181 INFO 44693 [egg-sequelize](29ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 20:36:35,081 INFO 44693 [egg-sequelize](9ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:36:35,087 WARN 44693 [-/127.0.0.1/-/24ms GET /users/show] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44693
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:37:12,589 INFO 44693 [egg-sequelize](4ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:37:12,592 WARN 44693 [-/127.0.0.1/-/37ms GET /users/show?id=111] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44693
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:37:15,527 INFO 44693 [egg-sequelize](5ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:37:15,528 WARN 44693 [-/127.0.0.1/-/9ms GET /users/show?id=1111] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44693
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:37:23,140 INFO 44693 [egg-sequelize](7ms) Executed (default): SELECT count(*) AS `count` FROM `users` AS `user`;
+2020-01-11 20:37:23,150 INFO 44693 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` ORDER BY `user`.`created_at` DESC, `user`.`id` DESC LIMIT 0, 10;
+2020-01-11 20:37:53,497 INFO 44693 [egg-sequelize](11ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:37:53,502 WARN 44693 [-/127.0.0.1/-/61ms GET /users/show?id=1111] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44693
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:42:23,501 WARN 44693 [-/127.0.0.1/-/6ms POST /users/show?id=1111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-01-11 20:42:23,515 WARN 44693 [-/127.0.0.1/-/21ms POST /users/show?id=1111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/app/extend/context.js:162:19)
+    at csrf (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:13)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at overrideMethod (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-override@3.0.0@koa-override/index.js:38:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:51:63
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "invalid csrf token"
+pid: 44693
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:43:18,771 INFO 44961 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:43:56,121 INFO 44961 [egg-sequelize](3ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:43:56,152 WARN 44961 [-/127.0.0.1/-/75ms GET /users/:111] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44961
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:43:59,280 INFO 44961 [egg-sequelize](8ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 0;
+2020-01-11 20:43:59,282 WARN 44961 [-/127.0.0.1/-/14ms GET /users/:1111] nodejs.NotFoundError: user not found
+    at Object.throw (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa@2.11.0@koa/lib/context.js:97:11)
+    at User.find (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/service/user.js:17:21)
+    at async UserController.show (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/user.js:17:16)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-session@5.12.3@koa-session/index.js:41:7)
+    at async bodyParser (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-bodyparser@4.2.1@koa-bodyparser/index.js:86:5)
+    at async /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-static-cache@5.1.2@koa-static-cache/index.js:53:56
+    at async notfound (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/app/middleware/meta.js:12:5)
+message: "user not found"
+pid: 44961
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:44:11,096 INFO 44961 [egg-sequelize](9ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 20:45:41,906 INFO 45056 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:47:08,211 INFO 45110 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:47:45,908 INFO 45153 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:49:03,055 INFO 45222 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:49:18,477 INFO 45241 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:49:48,527 INFO 45266 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:50:58,420 INFO 45346 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:51:21,396 INFO 45384 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:53:02,035 INFO 45447 [egg-sequelize](4ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:53:18,774 INFO 45467 [egg-sequelize](8ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:53:23,617 ERROR 45467 [-/127.0.0.1/-/14ms GET /face/add] nodejs.ReferenceError: Core is not defined
+    at FaceController.add (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/controller/face.js:8:24)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xssProtection (/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/lib/middlewares/xssProtection.js:7:11)
+
+pid: 45467
+hostname: ArideMacBook-Air.local
+
+2020-01-11 20:54:04,955 INFO 45511 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:54:48,036 INFO 45511 [egg-sequelize](10ms) Executed (default): SELECT `id`, `name`, `age`, `created_at`, `updated_at`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt` FROM `users` AS `user` WHERE `user`.`id` = 1111;
+2020-01-11 20:55:55,594 INFO 45580 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:56:36,231 INFO 45623 [egg-sequelize](5ms) Executed (default): SELECT 1+1 AS result
+2020-01-11 20:56:44,865 INFO 45637 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result

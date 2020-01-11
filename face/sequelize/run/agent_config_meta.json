@@ -1,0 +1,287 @@
+{
+  "keys": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+  "sequelize": {
+    "dialect": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "database": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "host": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "port": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "password": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/config/config.default.js",
+    "username": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-sequelize@5.2.1@egg-sequelize/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "key": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "httpOnly": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
+    "encrypt": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "type": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "useSession": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "cookieName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "sessionName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "headerName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "bodyName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "queryName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "value": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.local.js",
+      "maxAge": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "value": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "value": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "policy": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js",
+      "checkAddress": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-security@2.7.1@egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js",
+    "callback": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js",
+    "csrf": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js",
+    "templatePath": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-onerror@2.1.0@egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "dirs": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "queryField": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "cookieField": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-i18n@2.1.1@egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js",
+      "development": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-watcher@3.1.0@egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-schedule@3.6.4@egg-schedule/config/config.default.js",
+      "file": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-schedule@3.6.4@egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-schedule@3.6.4@egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "autoFields": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "fields": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "fileSize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "files": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "whitelist": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-multipart@2.10.1@egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
+    "fastReady": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js",
+    "overrideDefault": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-development@2.4.3@egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "dir": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "dynamic": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "preload": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "buffer": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js",
+    "maxFiles": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-static@2.2.0@egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js",
+    "cache": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-view@2.1.2@egg-view/config/config.local.js",
+    "defaultExtension": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js",
+    "mapping": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg-view@2.1.2@egg-view/config/config.default.js"
+  },
+  "env": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "name": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "cookies": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "proxy": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "maxIpsCount": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "maxProxyCount": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "protocolHeaders": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "ipHeaders": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "hostHeaders": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "version": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "description": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "private": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "dependencies": {
+      "@alicloud/pop-core": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-sequelize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "mysql2": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-bin": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-mock": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "factory-girl": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "lodash": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "sequelize-cli": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "scripts": {
+      "dev": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "test": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "cov": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "ci": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "autod": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "sequelize": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "author": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "license": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "baseDir": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "HOME": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "rundir": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "notFound": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "sitefile": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "middlewares": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "httpClient": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "encoding": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "formLimit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "jsonLimit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "textLimit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "strict": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "depth": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "parameterLimit": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "onerror": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "encoding": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "env": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "level": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "consoleLevel": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "outputJSON": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "buffer": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "appLogName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "coreLogName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "agentLogName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "errorLogName": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "maxSockets": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "maxFreeSockets": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "maxSockets": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "maxFreeSockets": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "logging": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "workerStartTimeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "serverTimeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "port": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "hostname": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js",
+    "responseTimeout": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+  },
+  "onClientError": "/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/node_modules/_egg@2.26.0@egg/config/config.default.js"
+}

@@ -1,0 +1,476 @@
+2020-01-11 15:41:39,816 INFO 36411 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 15:41:39,910 INFO 36411 [egg-multipart] stream mode enable
+2020-01-11 15:41:41,568 INFO 36411 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 15:41:41,573 INFO 36411 [egg-security] use csrf middleware
+2020-01-11 15:41:41,576 INFO 36411 [egg-security] use methodnoallow middleware
+2020-01-11 15:41:41,578 INFO 36411 [egg-security] use noopen middleware
+2020-01-11 15:41:41,594 INFO 36411 [egg-security] use nosniff middleware
+2020-01-11 15:41:41,596 INFO 36411 [egg-security] use xssProtection middleware
+2020-01-11 15:41:41,600 INFO 36411 [egg-security] use xframe middleware
+2020-01-11 15:41:41,603 INFO 36411 [egg-security] use dta middleware
+2020-01-11 15:41:41,603 INFO 36411 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 15:41:41,655 INFO 36411 [egg:core] dump config after load, 20ms
+2020-01-11 15:41:41,773 INFO 36411 [egg-watcher:application] watcher start success
+2020-01-11 15:41:42,094 INFO 36411 [egg:core] dump config after ready, 8ms
+2020-01-11 16:19:22,763 INFO 39638 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:19:22,821 INFO 39638 [egg-multipart] stream mode enable
+2020-01-11 16:19:23,966 INFO 39638 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:19:23,971 INFO 39638 [egg-security] use csrf middleware
+2020-01-11 16:19:23,974 INFO 39638 [egg-security] use methodnoallow middleware
+2020-01-11 16:19:23,977 INFO 39638 [egg-security] use noopen middleware
+2020-01-11 16:19:23,980 INFO 39638 [egg-security] use nosniff middleware
+2020-01-11 16:19:23,982 INFO 39638 [egg-security] use xssProtection middleware
+2020-01-11 16:19:23,984 INFO 39638 [egg-security] use xframe middleware
+2020-01-11 16:19:23,986 INFO 39638 [egg-security] use dta middleware
+2020-01-11 16:19:23,986 INFO 39638 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:19:24,010 INFO 39638 [egg:core] dump config after load, 9ms
+2020-01-11 16:19:24,081 INFO 39638 [egg-watcher:application] watcher start success
+2020-01-11 16:19:24,272 INFO 39638 [egg:core] dump config after ready, 18ms
+2020-01-11 16:20:42,734 INFO 39688 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:20:42,793 INFO 39688 [egg-multipart] stream mode enable
+2020-01-11 16:20:43,934 INFO 39688 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:20:43,955 INFO 39688 [egg-security] use csrf middleware
+2020-01-11 16:20:43,959 INFO 39688 [egg-security] use methodnoallow middleware
+2020-01-11 16:20:43,962 INFO 39688 [egg-security] use noopen middleware
+2020-01-11 16:20:43,965 INFO 39688 [egg-security] use nosniff middleware
+2020-01-11 16:20:43,967 INFO 39688 [egg-security] use xssProtection middleware
+2020-01-11 16:20:43,969 INFO 39688 [egg-security] use xframe middleware
+2020-01-11 16:20:43,972 INFO 39688 [egg-security] use dta middleware
+2020-01-11 16:20:43,972 INFO 39688 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:20:43,993 INFO 39688 [egg:core] dump config after load, 8ms
+2020-01-11 16:20:44,370 INFO 39688 [egg-watcher:application] watcher start success
+2020-01-11 16:20:44,479 INFO 39688 [egg:core] dump config after ready, 18ms
+2020-01-11 16:34:32,221 INFO 40280 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:34:32,283 INFO 40280 [egg-multipart] stream mode enable
+2020-01-11 16:34:33,145 INFO 40280 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:34:33,157 INFO 40280 [egg-security] use csrf middleware
+2020-01-11 16:34:33,163 INFO 40280 [egg-security] use methodnoallow middleware
+2020-01-11 16:34:33,164 INFO 40280 [egg-security] use noopen middleware
+2020-01-11 16:34:33,172 INFO 40280 [egg-security] use nosniff middleware
+2020-01-11 16:34:33,174 INFO 40280 [egg-security] use xssProtection middleware
+2020-01-11 16:34:33,176 INFO 40280 [egg-security] use xframe middleware
+2020-01-11 16:34:33,179 INFO 40280 [egg-security] use dta middleware
+2020-01-11 16:34:33,179 INFO 40280 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:34:33,393 INFO 40280 [egg:core] dump config after load, 10ms
+2020-01-11 16:34:33,578 INFO 40280 [egg-watcher:application] watcher start success
+2020-01-11 16:34:33,692 INFO 40280 [egg:core] dump config after ready, 31ms
+2020-01-11 16:39:25,448 INFO 40427 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:39:25,534 INFO 40427 [egg-multipart] stream mode enable
+2020-01-11 16:39:26,693 INFO 40427 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:39:26,697 INFO 40427 [egg-security] use csrf middleware
+2020-01-11 16:39:26,700 INFO 40427 [egg-security] use methodnoallow middleware
+2020-01-11 16:39:26,702 INFO 40427 [egg-security] use noopen middleware
+2020-01-11 16:39:26,705 INFO 40427 [egg-security] use nosniff middleware
+2020-01-11 16:39:26,707 INFO 40427 [egg-security] use xssProtection middleware
+2020-01-11 16:39:26,709 INFO 40427 [egg-security] use xframe middleware
+2020-01-11 16:39:26,712 INFO 40427 [egg-security] use dta middleware
+2020-01-11 16:39:26,712 INFO 40427 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:39:26,889 INFO 40427 [egg:core] dump config after load, 7ms
+2020-01-11 16:39:27,124 INFO 40427 [egg-watcher:application] watcher start success
+2020-01-11 16:39:27,262 INFO 40427 [egg:core] dump config after ready, 24ms
+2020-01-11 16:40:08,339 INFO 40468 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:40:08,383 INFO 40468 [egg-multipart] stream mode enable
+2020-01-11 16:40:09,749 INFO 40468 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:40:09,754 INFO 40468 [egg-security] use csrf middleware
+2020-01-11 16:40:09,756 INFO 40468 [egg-security] use methodnoallow middleware
+2020-01-11 16:40:09,762 INFO 40468 [egg-security] use noopen middleware
+2020-01-11 16:40:09,765 INFO 40468 [egg-security] use nosniff middleware
+2020-01-11 16:40:09,767 INFO 40468 [egg-security] use xssProtection middleware
+2020-01-11 16:40:09,769 INFO 40468 [egg-security] use xframe middleware
+2020-01-11 16:40:09,771 INFO 40468 [egg-security] use dta middleware
+2020-01-11 16:40:09,772 INFO 40468 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:40:09,957 INFO 40468 [egg:core] dump config after load, 9ms
+2020-01-11 16:40:10,274 INFO 40468 [egg-watcher:application] watcher start success
+2020-01-11 16:40:10,368 INFO 40468 [egg:core] dump config after ready, 22ms
+2020-01-11 16:40:24,806 INFO 40489 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:40:24,867 INFO 40489 [egg-multipart] stream mode enable
+2020-01-11 16:40:25,906 INFO 40489 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:40:25,910 INFO 40489 [egg-security] use csrf middleware
+2020-01-11 16:40:25,913 INFO 40489 [egg-security] use methodnoallow middleware
+2020-01-11 16:40:25,915 INFO 40489 [egg-security] use noopen middleware
+2020-01-11 16:40:25,918 INFO 40489 [egg-security] use nosniff middleware
+2020-01-11 16:40:25,920 INFO 40489 [egg-security] use xssProtection middleware
+2020-01-11 16:40:25,922 INFO 40489 [egg-security] use xframe middleware
+2020-01-11 16:40:25,924 INFO 40489 [egg-security] use dta middleware
+2020-01-11 16:40:25,924 INFO 40489 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:40:26,139 INFO 40489 [egg:core] dump config after load, 8ms
+2020-01-11 16:40:26,280 INFO 40489 [egg-watcher:application] watcher start success
+2020-01-11 16:40:26,527 INFO 40489 [egg:core] dump config after ready, 9ms
+2020-01-11 16:43:13,654 INFO 40599 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:43:13,760 INFO 40599 [egg-multipart] stream mode enable
+2020-01-11 16:43:15,259 INFO 40599 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:43:15,265 INFO 40599 [egg-security] use csrf middleware
+2020-01-11 16:43:15,268 INFO 40599 [egg-security] use methodnoallow middleware
+2020-01-11 16:43:15,270 INFO 40599 [egg-security] use noopen middleware
+2020-01-11 16:43:15,273 INFO 40599 [egg-security] use nosniff middleware
+2020-01-11 16:43:15,275 INFO 40599 [egg-security] use xssProtection middleware
+2020-01-11 16:43:15,277 INFO 40599 [egg-security] use xframe middleware
+2020-01-11 16:43:15,279 INFO 40599 [egg-security] use dta middleware
+2020-01-11 16:43:15,280 INFO 40599 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:43:15,440 INFO 40599 [egg:core] dump config after load, 7ms
+2020-01-11 16:43:15,669 INFO 40599 [egg-watcher:application] watcher start success
+2020-01-11 16:43:15,786 INFO 40599 [egg:core] dump config after ready, 38ms
+2020-01-11 16:43:33,940 INFO 40628 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:43:34,131 INFO 40628 [egg-multipart] stream mode enable
+2020-01-11 16:43:36,390 INFO 40628 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:43:36,396 INFO 40628 [egg-security] use csrf middleware
+2020-01-11 16:43:36,399 INFO 40628 [egg-security] use methodnoallow middleware
+2020-01-11 16:43:36,401 INFO 40628 [egg-security] use noopen middleware
+2020-01-11 16:43:36,403 INFO 40628 [egg-security] use nosniff middleware
+2020-01-11 16:43:36,404 INFO 40628 [egg-security] use xssProtection middleware
+2020-01-11 16:43:36,405 INFO 40628 [egg-security] use xframe middleware
+2020-01-11 16:43:36,405 INFO 40628 [egg-security] use dta middleware
+2020-01-11 16:43:36,405 INFO 40628 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:43:36,600 INFO 40628 [egg:core] dump config after load, 16ms
+2020-01-11 16:43:36,910 INFO 40628 [egg-watcher:application] watcher start success
+2020-01-11 16:43:37,168 INFO 40628 [egg:core] dump config after ready, 11ms
+2020-01-11 16:45:18,537 INFO 40692 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:45:18,610 INFO 40692 [egg-multipart] stream mode enable
+2020-01-11 16:45:20,073 INFO 40692 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:45:20,077 INFO 40692 [egg-security] use csrf middleware
+2020-01-11 16:45:20,082 INFO 40692 [egg-security] use methodnoallow middleware
+2020-01-11 16:45:20,085 INFO 40692 [egg-security] use noopen middleware
+2020-01-11 16:45:20,088 INFO 40692 [egg-security] use nosniff middleware
+2020-01-11 16:45:20,091 INFO 40692 [egg-security] use xssProtection middleware
+2020-01-11 16:45:20,095 INFO 40692 [egg-security] use xframe middleware
+2020-01-11 16:45:20,098 INFO 40692 [egg-security] use dta middleware
+2020-01-11 16:45:20,098 INFO 40692 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:45:20,341 INFO 40692 [egg:core] dump config after load, 31ms
+2020-01-11 16:45:20,611 INFO 40692 [egg-watcher:application] watcher start success
+2020-01-11 16:45:20,737 INFO 40692 [egg:core] dump config after ready, 26ms
+2020-01-11 16:45:47,700 INFO 40721 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:45:47,746 INFO 40721 [egg-multipart] stream mode enable
+2020-01-11 16:45:48,742 INFO 40721 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:45:48,745 INFO 40721 [egg-security] use csrf middleware
+2020-01-11 16:45:48,748 INFO 40721 [egg-security] use methodnoallow middleware
+2020-01-11 16:45:48,750 INFO 40721 [egg-security] use noopen middleware
+2020-01-11 16:45:48,753 INFO 40721 [egg-security] use nosniff middleware
+2020-01-11 16:45:48,755 INFO 40721 [egg-security] use xssProtection middleware
+2020-01-11 16:45:48,757 INFO 40721 [egg-security] use xframe middleware
+2020-01-11 16:45:48,759 INFO 40721 [egg-security] use dta middleware
+2020-01-11 16:45:48,759 INFO 40721 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:45:48,895 INFO 40721 [egg:core] dump config after load, 5ms
+2020-01-11 16:45:48,947 INFO 40721 [egg-watcher:application] watcher start success
+2020-01-11 16:45:49,053 INFO 40721 [egg:core] dump config after ready, 11ms
+2020-01-11 16:50:45,474 INFO 40909 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:50:45,561 INFO 40909 [egg-multipart] stream mode enable
+2020-01-11 16:50:46,782 INFO 40909 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:50:46,786 INFO 40909 [egg-security] use csrf middleware
+2020-01-11 16:50:46,790 INFO 40909 [egg-security] use methodnoallow middleware
+2020-01-11 16:50:46,792 INFO 40909 [egg-security] use noopen middleware
+2020-01-11 16:50:46,795 INFO 40909 [egg-security] use nosniff middleware
+2020-01-11 16:50:46,797 INFO 40909 [egg-security] use xssProtection middleware
+2020-01-11 16:50:46,799 INFO 40909 [egg-security] use xframe middleware
+2020-01-11 16:50:46,801 INFO 40909 [egg-security] use dta middleware
+2020-01-11 16:50:46,801 INFO 40909 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:50:46,949 INFO 40909 [egg:core] dump config after load, 10ms
+2020-01-11 16:50:47,171 INFO 40909 [egg-watcher:application] watcher start success
+2020-01-11 16:50:47,316 INFO 40909 [egg:core] dump config after ready, 27ms
+2020-01-11 16:52:16,771 INFO 40966 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:52:16,819 INFO 40966 [egg-multipart] stream mode enable
+2020-01-11 16:52:18,057 INFO 40966 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:52:18,064 INFO 40966 [egg-security] use csrf middleware
+2020-01-11 16:52:18,068 INFO 40966 [egg-security] use methodnoallow middleware
+2020-01-11 16:52:18,070 INFO 40966 [egg-security] use noopen middleware
+2020-01-11 16:52:18,072 INFO 40966 [egg-security] use nosniff middleware
+2020-01-11 16:52:18,075 INFO 40966 [egg-security] use xssProtection middleware
+2020-01-11 16:52:18,078 INFO 40966 [egg-security] use xframe middleware
+2020-01-11 16:52:18,080 INFO 40966 [egg-security] use dta middleware
+2020-01-11 16:52:18,080 INFO 40966 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:52:18,501 INFO 40966 [egg:core] dump config after load, 10ms
+2020-01-11 16:52:18,669 INFO 40966 [egg-watcher:application] watcher start success
+2020-01-11 16:52:18,780 INFO 40966 [egg:core] dump config after ready, 16ms
+2020-01-11 16:53:58,460 INFO 41037 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:53:58,514 INFO 41037 [egg-multipart] stream mode enable
+2020-01-11 16:53:59,900 INFO 41037 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:53:59,907 INFO 41037 [egg-security] use csrf middleware
+2020-01-11 16:53:59,909 INFO 41037 [egg-security] use methodnoallow middleware
+2020-01-11 16:53:59,912 INFO 41037 [egg-security] use noopen middleware
+2020-01-11 16:53:59,914 INFO 41037 [egg-security] use nosniff middleware
+2020-01-11 16:53:59,916 INFO 41037 [egg-security] use xssProtection middleware
+2020-01-11 16:53:59,919 INFO 41037 [egg-security] use xframe middleware
+2020-01-11 16:53:59,921 INFO 41037 [egg-security] use dta middleware
+2020-01-11 16:53:59,921 INFO 41037 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:54:00,080 INFO 41037 [egg:core] dump config after load, 6ms
+2020-01-11 16:54:00,162 INFO 41037 [egg-watcher:application] watcher start success
+2020-01-11 16:54:00,482 INFO 41037 [egg:core] dump config after ready, 23ms
+2020-01-11 16:54:48,991 INFO 41087 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:54:49,071 INFO 41087 [egg-multipart] stream mode enable
+2020-01-11 16:54:49,595 INFO 41087 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:54:49,598 INFO 41087 [egg-security] use csrf middleware
+2020-01-11 16:54:49,599 INFO 41087 [egg-security] use methodnoallow middleware
+2020-01-11 16:54:49,602 INFO 41087 [egg-security] use noopen middleware
+2020-01-11 16:54:49,603 INFO 41087 [egg-security] use nosniff middleware
+2020-01-11 16:54:49,603 INFO 41087 [egg-security] use xssProtection middleware
+2020-01-11 16:54:49,604 INFO 41087 [egg-security] use xframe middleware
+2020-01-11 16:54:49,604 INFO 41087 [egg-security] use dta middleware
+2020-01-11 16:54:49,605 INFO 41087 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:54:49,675 INFO 41087 [egg:core] dump config after load, 5ms
+2020-01-11 16:54:49,833 INFO 41087 [egg-watcher:application] watcher start success
+2020-01-11 16:54:50,469 INFO 41087 [egg:core] dump config after ready, 7ms
+2020-01-11 16:55:23,513 INFO 41112 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 16:55:23,561 INFO 41112 [egg-multipart] stream mode enable
+2020-01-11 16:55:24,627 INFO 41112 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 16:55:24,634 INFO 41112 [egg-security] use csrf middleware
+2020-01-11 16:55:24,636 INFO 41112 [egg-security] use methodnoallow middleware
+2020-01-11 16:55:24,638 INFO 41112 [egg-security] use noopen middleware
+2020-01-11 16:55:24,642 INFO 41112 [egg-security] use nosniff middleware
+2020-01-11 16:55:24,644 INFO 41112 [egg-security] use xssProtection middleware
+2020-01-11 16:55:24,646 INFO 41112 [egg-security] use xframe middleware
+2020-01-11 16:55:24,651 INFO 41112 [egg-security] use dta middleware
+2020-01-11 16:55:24,651 INFO 41112 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 16:55:24,828 INFO 41112 [egg:core] dump config after load, 8ms
+2020-01-11 16:55:24,907 INFO 41112 [egg-watcher:application] watcher start success
+2020-01-11 16:55:25,509 INFO 41112 [egg:core] dump config after ready, 17ms
+2020-01-11 20:34:19,380 INFO 44632 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:34:19,511 INFO 44632 [egg-multipart] stream mode enable
+2020-01-11 20:34:21,237 INFO 44632 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:34:21,241 INFO 44632 [egg-security] use csrf middleware
+2020-01-11 20:34:21,246 INFO 44632 [egg-security] use methodnoallow middleware
+2020-01-11 20:34:21,248 INFO 44632 [egg-security] use noopen middleware
+2020-01-11 20:34:21,250 INFO 44632 [egg-security] use nosniff middleware
+2020-01-11 20:34:21,253 INFO 44632 [egg-security] use xssProtection middleware
+2020-01-11 20:34:21,255 INFO 44632 [egg-security] use xframe middleware
+2020-01-11 20:34:21,257 INFO 44632 [egg-security] use dta middleware
+2020-01-11 20:34:21,257 INFO 44632 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:34:21,434 INFO 44632 [egg:core] dump config after load, 22ms
+2020-01-11 20:34:21,617 INFO 44632 [egg-watcher:application] watcher start success
+2020-01-11 20:34:21,984 INFO 44632 [egg:core] dump config after ready, 15ms
+2020-01-11 20:34:26,184 INFO 44634 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:34:26,255 INFO 44634 [egg-multipart] stream mode enable
+2020-01-11 20:34:28,454 INFO 44634 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:34:28,461 INFO 44634 [egg-security] use csrf middleware
+2020-01-11 20:34:28,463 INFO 44634 [egg-security] use methodnoallow middleware
+2020-01-11 20:34:28,465 INFO 44634 [egg-security] use noopen middleware
+2020-01-11 20:34:28,467 INFO 44634 [egg-security] use nosniff middleware
+2020-01-11 20:34:28,471 INFO 44634 [egg-security] use xssProtection middleware
+2020-01-11 20:34:28,473 INFO 44634 [egg-security] use xframe middleware
+2020-01-11 20:34:28,477 INFO 44634 [egg-security] use dta middleware
+2020-01-11 20:34:28,477 INFO 44634 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:34:28,795 INFO 44634 [egg:core] dump config after load, 6ms
+2020-01-11 20:34:29,070 INFO 44634 [egg-watcher:application] watcher start success
+2020-01-11 20:34:29,345 INFO 44634 [egg:core] dump config after ready, 8ms
+2020-01-11 20:35:55,239 INFO 44693 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:35:55,286 INFO 44693 [egg-multipart] stream mode enable
+2020-01-11 20:35:56,888 INFO 44693 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:35:56,895 INFO 44693 [egg-security] use csrf middleware
+2020-01-11 20:35:56,901 INFO 44693 [egg-security] use methodnoallow middleware
+2020-01-11 20:35:56,904 INFO 44693 [egg-security] use noopen middleware
+2020-01-11 20:35:56,906 INFO 44693 [egg-security] use nosniff middleware
+2020-01-11 20:35:56,910 INFO 44693 [egg-security] use xssProtection middleware
+2020-01-11 20:35:56,913 INFO 44693 [egg-security] use xframe middleware
+2020-01-11 20:35:56,917 INFO 44693 [egg-security] use dta middleware
+2020-01-11 20:35:56,917 INFO 44693 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:35:57,294 INFO 44693 [egg:core] dump config after load, 18ms
+2020-01-11 20:35:57,525 INFO 44693 [egg-watcher:application] watcher start success
+2020-01-11 20:35:57,671 INFO 44693 [egg:core] dump config after ready, 28ms
+2020-01-11 20:43:17,812 INFO 44961 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:43:17,856 INFO 44961 [egg-multipart] stream mode enable
+2020-01-11 20:43:18,413 INFO 44961 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:43:18,417 INFO 44961 [egg-security] use csrf middleware
+2020-01-11 20:43:18,420 INFO 44961 [egg-security] use methodnoallow middleware
+2020-01-11 20:43:18,422 INFO 44961 [egg-security] use noopen middleware
+2020-01-11 20:43:18,424 INFO 44961 [egg-security] use nosniff middleware
+2020-01-11 20:43:18,426 INFO 44961 [egg-security] use xssProtection middleware
+2020-01-11 20:43:18,428 INFO 44961 [egg-security] use xframe middleware
+2020-01-11 20:43:18,431 INFO 44961 [egg-security] use dta middleware
+2020-01-11 20:43:18,431 INFO 44961 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:43:18,580 INFO 44961 [egg:core] dump config after load, 6ms
+2020-01-11 20:43:18,636 INFO 44961 [egg-watcher:application] watcher start success
+2020-01-11 20:43:18,790 INFO 44961 [egg:core] dump config after ready, 8ms
+2020-01-11 20:45:39,804 INFO 45056 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:45:39,861 INFO 45056 [egg-multipart] stream mode enable
+2020-01-11 20:45:41,283 INFO 45056 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:45:41,294 INFO 45056 [egg-security] use csrf middleware
+2020-01-11 20:45:41,299 INFO 45056 [egg-security] use methodnoallow middleware
+2020-01-11 20:45:41,304 INFO 45056 [egg-security] use noopen middleware
+2020-01-11 20:45:41,313 INFO 45056 [egg-security] use nosniff middleware
+2020-01-11 20:45:41,319 INFO 45056 [egg-security] use xssProtection middleware
+2020-01-11 20:45:41,327 INFO 45056 [egg-security] use xframe middleware
+2020-01-11 20:45:41,330 INFO 45056 [egg-security] use dta middleware
+2020-01-11 20:45:41,330 INFO 45056 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:45:41,529 INFO 45056 [egg:core] dump config after load, 6ms
+2020-01-11 20:45:41,839 INFO 45056 [egg-watcher:application] watcher start success
+2020-01-11 20:45:41,943 INFO 45056 [egg:core] dump config after ready, 21ms
+2020-01-11 20:47:05,754 INFO 45110 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:47:05,817 INFO 45110 [egg-multipart] stream mode enable
+2020-01-11 20:47:07,703 INFO 45110 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:47:07,707 INFO 45110 [egg-security] use csrf middleware
+2020-01-11 20:47:07,711 INFO 45110 [egg-security] use methodnoallow middleware
+2020-01-11 20:47:07,713 INFO 45110 [egg-security] use noopen middleware
+2020-01-11 20:47:07,719 INFO 45110 [egg-security] use nosniff middleware
+2020-01-11 20:47:07,721 INFO 45110 [egg-security] use xssProtection middleware
+2020-01-11 20:47:07,723 INFO 45110 [egg-security] use xframe middleware
+2020-01-11 20:47:07,727 INFO 45110 [egg-security] use dta middleware
+2020-01-11 20:47:07,727 INFO 45110 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:47:07,931 INFO 45110 [egg:core] dump config after load, 10ms
+2020-01-11 20:47:08,084 INFO 45110 [egg-watcher:application] watcher start success
+2020-01-11 20:47:08,248 INFO 45110 [egg:core] dump config after ready, 23ms
+2020-01-11 20:47:44,644 INFO 45153 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:47:44,678 INFO 45153 [egg-multipart] stream mode enable
+2020-01-11 20:47:45,379 INFO 45153 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:47:45,384 INFO 45153 [egg-security] use csrf middleware
+2020-01-11 20:47:45,388 INFO 45153 [egg-security] use methodnoallow middleware
+2020-01-11 20:47:45,390 INFO 45153 [egg-security] use noopen middleware
+2020-01-11 20:47:45,392 INFO 45153 [egg-security] use nosniff middleware
+2020-01-11 20:47:45,394 INFO 45153 [egg-security] use xssProtection middleware
+2020-01-11 20:47:45,396 INFO 45153 [egg-security] use xframe middleware
+2020-01-11 20:47:45,398 INFO 45153 [egg-security] use dta middleware
+2020-01-11 20:47:45,398 INFO 45153 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:47:45,541 INFO 45153 [egg:core] dump config after load, 9ms
+2020-01-11 20:47:45,784 INFO 45153 [egg-watcher:application] watcher start success
+2020-01-11 20:47:45,957 INFO 45153 [egg:core] dump config after ready, 26ms
+2020-01-11 20:49:01,173 INFO 45222 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:49:01,225 INFO 45222 [egg-multipart] stream mode enable
+2020-01-11 20:49:02,503 INFO 45222 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:49:02,507 INFO 45222 [egg-security] use csrf middleware
+2020-01-11 20:49:02,513 INFO 45222 [egg-security] use methodnoallow middleware
+2020-01-11 20:49:02,517 INFO 45222 [egg-security] use noopen middleware
+2020-01-11 20:49:02,522 INFO 45222 [egg-security] use nosniff middleware
+2020-01-11 20:49:02,525 INFO 45222 [egg-security] use xssProtection middleware
+2020-01-11 20:49:02,531 INFO 45222 [egg-security] use xframe middleware
+2020-01-11 20:49:02,537 INFO 45222 [egg-security] use dta middleware
+2020-01-11 20:49:02,538 INFO 45222 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:49:02,803 INFO 45222 [egg:core] dump config after load, 15ms
+2020-01-11 20:49:02,957 INFO 45222 [egg-watcher:application] watcher start success
+2020-01-11 20:49:03,079 INFO 45222 [egg:core] dump config after ready, 20ms
+2020-01-11 20:49:16,828 INFO 45241 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:49:16,876 INFO 45241 [egg-multipart] stream mode enable
+2020-01-11 20:49:18,069 INFO 45241 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:49:18,074 INFO 45241 [egg-security] use csrf middleware
+2020-01-11 20:49:18,076 INFO 45241 [egg-security] use methodnoallow middleware
+2020-01-11 20:49:18,078 INFO 45241 [egg-security] use noopen middleware
+2020-01-11 20:49:18,081 INFO 45241 [egg-security] use nosniff middleware
+2020-01-11 20:49:18,083 INFO 45241 [egg-security] use xssProtection middleware
+2020-01-11 20:49:18,085 INFO 45241 [egg-security] use xframe middleware
+2020-01-11 20:49:18,087 INFO 45241 [egg-security] use dta middleware
+2020-01-11 20:49:18,087 INFO 45241 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:49:18,243 INFO 45241 [egg:core] dump config after load, 7ms
+2020-01-11 20:49:18,354 INFO 45241 [egg-watcher:application] watcher start success
+2020-01-11 20:49:18,504 INFO 45241 [egg:core] dump config after ready, 18ms
+2020-01-11 20:49:46,527 INFO 45266 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:49:46,605 INFO 45266 [egg-multipart] stream mode enable
+2020-01-11 20:49:47,992 INFO 45266 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:49:48,001 INFO 45266 [egg-security] use csrf middleware
+2020-01-11 20:49:48,004 INFO 45266 [egg-security] use methodnoallow middleware
+2020-01-11 20:49:48,005 INFO 45266 [egg-security] use noopen middleware
+2020-01-11 20:49:48,008 INFO 45266 [egg-security] use nosniff middleware
+2020-01-11 20:49:48,011 INFO 45266 [egg-security] use xssProtection middleware
+2020-01-11 20:49:48,013 INFO 45266 [egg-security] use xframe middleware
+2020-01-11 20:49:48,015 INFO 45266 [egg-security] use dta middleware
+2020-01-11 20:49:48,015 INFO 45266 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:49:48,177 INFO 45266 [egg:core] dump config after load, 6ms
+2020-01-11 20:49:48,412 INFO 45266 [egg-watcher:application] watcher start success
+2020-01-11 20:49:48,556 INFO 45266 [egg:core] dump config after ready, 18ms
+2020-01-11 20:50:57,397 INFO 45346 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:50:57,486 INFO 45346 [egg-multipart] stream mode enable
+2020-01-11 20:50:58,050 INFO 45346 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:50:58,054 INFO 45346 [egg-security] use csrf middleware
+2020-01-11 20:50:58,055 INFO 45346 [egg-security] use methodnoallow middleware
+2020-01-11 20:50:58,056 INFO 45346 [egg-security] use noopen middleware
+2020-01-11 20:50:58,060 INFO 45346 [egg-security] use nosniff middleware
+2020-01-11 20:50:58,060 INFO 45346 [egg-security] use xssProtection middleware
+2020-01-11 20:50:58,061 INFO 45346 [egg-security] use xframe middleware
+2020-01-11 20:50:58,061 INFO 45346 [egg-security] use dta middleware
+2020-01-11 20:50:58,061 INFO 45346 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:50:58,230 INFO 45346 [egg:core] dump config after load, 7ms
+2020-01-11 20:50:58,332 INFO 45346 [egg-watcher:application] watcher start success
+2020-01-11 20:50:58,471 INFO 45346 [egg:core] dump config after ready, 24ms
+2020-01-11 20:51:19,663 INFO 45384 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:51:19,739 INFO 45384 [egg-multipart] stream mode enable
+2020-01-11 20:51:20,961 INFO 45384 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:51:20,965 INFO 45384 [egg-security] use csrf middleware
+2020-01-11 20:51:20,967 INFO 45384 [egg-security] use methodnoallow middleware
+2020-01-11 20:51:20,969 INFO 45384 [egg-security] use noopen middleware
+2020-01-11 20:51:20,972 INFO 45384 [egg-security] use nosniff middleware
+2020-01-11 20:51:20,974 INFO 45384 [egg-security] use xssProtection middleware
+2020-01-11 20:51:20,977 INFO 45384 [egg-security] use xframe middleware
+2020-01-11 20:51:20,979 INFO 45384 [egg-security] use dta middleware
+2020-01-11 20:51:20,979 INFO 45384 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:51:21,136 INFO 45384 [egg:core] dump config after load, 13ms
+2020-01-11 20:51:21,198 INFO 45384 [egg-watcher:application] watcher start success
+2020-01-11 20:51:21,439 INFO 45384 [egg:core] dump config after ready, 31ms
+2020-01-11 20:53:00,475 INFO 45447 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:53:00,524 INFO 45447 [egg-multipart] stream mode enable
+2020-01-11 20:53:01,576 INFO 45447 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:53:01,584 INFO 45447 [egg-security] use csrf middleware
+2020-01-11 20:53:01,589 INFO 45447 [egg-security] use methodnoallow middleware
+2020-01-11 20:53:01,592 INFO 45447 [egg-security] use noopen middleware
+2020-01-11 20:53:01,596 INFO 45447 [egg-security] use nosniff middleware
+2020-01-11 20:53:01,598 INFO 45447 [egg-security] use xssProtection middleware
+2020-01-11 20:53:01,600 INFO 45447 [egg-security] use xframe middleware
+2020-01-11 20:53:01,604 INFO 45447 [egg-security] use dta middleware
+2020-01-11 20:53:01,604 INFO 45447 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:53:01,792 INFO 45447 [egg:core] dump config after load, 7ms
+2020-01-11 20:53:01,996 INFO 45447 [egg-watcher:application] watcher start success
+2020-01-11 20:53:02,063 INFO 45447 [egg:core] dump config after ready, 21ms
+2020-01-11 20:53:17,369 INFO 45467 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:53:17,436 INFO 45467 [egg-multipart] stream mode enable
+2020-01-11 20:53:18,560 INFO 45467 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:53:18,562 INFO 45467 [egg-security] use csrf middleware
+2020-01-11 20:53:18,563 INFO 45467 [egg-security] use methodnoallow middleware
+2020-01-11 20:53:18,564 INFO 45467 [egg-security] use noopen middleware
+2020-01-11 20:53:18,565 INFO 45467 [egg-security] use nosniff middleware
+2020-01-11 20:53:18,565 INFO 45467 [egg-security] use xssProtection middleware
+2020-01-11 20:53:18,566 INFO 45467 [egg-security] use xframe middleware
+2020-01-11 20:53:18,566 INFO 45467 [egg-security] use dta middleware
+2020-01-11 20:53:18,566 INFO 45467 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:53:18,621 INFO 45467 [egg:core] dump config after load, 6ms
+2020-01-11 20:53:18,667 INFO 45467 [egg-watcher:application] watcher start success
+2020-01-11 20:53:18,784 INFO 45467 [egg:core] dump config after ready, 6ms
+2020-01-11 20:54:03,121 INFO 45511 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:54:03,290 INFO 45511 [egg-multipart] stream mode enable
+2020-01-11 20:54:04,506 INFO 45511 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:54:04,511 INFO 45511 [egg-security] use csrf middleware
+2020-01-11 20:54:04,514 INFO 45511 [egg-security] use methodnoallow middleware
+2020-01-11 20:54:04,516 INFO 45511 [egg-security] use noopen middleware
+2020-01-11 20:54:04,518 INFO 45511 [egg-security] use nosniff middleware
+2020-01-11 20:54:04,521 INFO 45511 [egg-security] use xssProtection middleware
+2020-01-11 20:54:04,523 INFO 45511 [egg-security] use xframe middleware
+2020-01-11 20:54:04,526 INFO 45511 [egg-security] use dta middleware
+2020-01-11 20:54:04,526 INFO 45511 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:54:04,703 INFO 45511 [egg:core] dump config after load, 12ms
+2020-01-11 20:54:04,866 INFO 45511 [egg-watcher:application] watcher start success
+2020-01-11 20:54:05,098 INFO 45511 [egg:core] dump config after ready, 88ms
+2020-01-11 20:55:53,946 INFO 45580 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:55:54,019 INFO 45580 [egg-multipart] stream mode enable
+2020-01-11 20:55:55,140 INFO 45580 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:55:55,144 INFO 45580 [egg-security] use csrf middleware
+2020-01-11 20:55:55,147 INFO 45580 [egg-security] use methodnoallow middleware
+2020-01-11 20:55:55,149 INFO 45580 [egg-security] use noopen middleware
+2020-01-11 20:55:55,152 INFO 45580 [egg-security] use nosniff middleware
+2020-01-11 20:55:55,154 INFO 45580 [egg-security] use xssProtection middleware
+2020-01-11 20:55:55,157 INFO 45580 [egg-security] use xframe middleware
+2020-01-11 20:55:55,159 INFO 45580 [egg-security] use dta middleware
+2020-01-11 20:55:55,159 INFO 45580 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:55:55,340 INFO 45580 [egg:core] dump config after load, 9ms
+2020-01-11 20:55:55,513 INFO 45580 [egg-watcher:application] watcher start success
+2020-01-11 20:55:55,615 INFO 45580 [egg:core] dump config after ready, 9ms
+2020-01-11 20:56:32,229 INFO 45623 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:56:32,365 INFO 45623 [egg-multipart] stream mode enable
+2020-01-11 20:56:34,975 INFO 45623 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:56:34,982 INFO 45623 [egg-security] use csrf middleware
+2020-01-11 20:56:34,985 INFO 45623 [egg-security] use methodnoallow middleware
+2020-01-11 20:56:34,999 INFO 45623 [egg-security] use noopen middleware
+2020-01-11 20:56:35,001 INFO 45623 [egg-security] use nosniff middleware
+2020-01-11 20:56:35,003 INFO 45623 [egg-security] use xssProtection middleware
+2020-01-11 20:56:35,007 INFO 45623 [egg-security] use xframe middleware
+2020-01-11 20:56:35,009 INFO 45623 [egg-security] use dta middleware
+2020-01-11 20:56:35,009 INFO 45623 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:56:35,542 INFO 45623 [egg:core] dump config after load, 13ms
+2020-01-11 20:56:36,133 INFO 45623 [egg-watcher:application] watcher start success
+2020-01-11 20:56:36,271 INFO 45623 [egg:core] dump config after ready, 32ms
+2020-01-11 20:56:43,641 INFO 45637 [egg:logger] init all loggers with options: {"dir":"/Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/logs/sequelize-example","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sequelize-example-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-01-11 20:56:43,685 INFO 45637 [egg-multipart] stream mode enable
+2020-01-11 20:56:44,566 INFO 45637 [egg-static] starting static serve /public/ -> /Users/abser/go/src/github.com/yhyddr/projector/face/sequelize/app/public
+2020-01-11 20:56:44,573 INFO 45637 [egg-security] use csrf middleware
+2020-01-11 20:56:44,576 INFO 45637 [egg-security] use methodnoallow middleware
+2020-01-11 20:56:44,578 INFO 45637 [egg-security] use noopen middleware
+2020-01-11 20:56:44,581 INFO 45637 [egg-security] use nosniff middleware
+2020-01-11 20:56:44,583 INFO 45637 [egg-security] use xssProtection middleware
+2020-01-11 20:56:44,585 INFO 45637 [egg-security] use xframe middleware
+2020-01-11 20:56:44,588 INFO 45637 [egg-security] use dta middleware
+2020-01-11 20:56:44,588 INFO 45637 [egg-security] compose 7 middlewares into one security middleware
+2020-01-11 20:56:44,719 INFO 45637 [egg:core] dump config after load, 5ms
+2020-01-11 20:56:44,765 INFO 45637 [egg-watcher:application] watcher start success
+2020-01-11 20:56:44,956 INFO 45637 [egg:core] dump config after ready, 82ms
