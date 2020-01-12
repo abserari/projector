@@ -58,12 +58,12 @@ async function face(ctx, params) {
   }, (ex) => {
     // if timeout, publish timeout info to timeout channel.
     console.log(ex);
-    const ec = require('emitter-io').connect({ host: "127.0.0.1", port: "8080" })
-    ec.publish({
-      key: "DhfPNWDeeBkLI1ym0VN8NP7GufF58rUE",
-      channel: "timeout",
-      message: "timeout"
-    });
+    // const ec = require('emitter-io').connect({ host: "127.0.0.1", port: "8080" })
+    // ec.publish({
+    //   key: emitterKey,
+    //   channel: channel,
+    //   message: JSON.stringify("timeout")
+    // });
   })
 }
 
