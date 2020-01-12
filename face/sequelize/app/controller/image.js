@@ -8,6 +8,23 @@ var channel = "personinfo";
 
 const groups = "workers"
 
+Promise.prototype.wait = function(ms){
+  var P = this.constructor;
+  return this.then(function(v){
+    return new P(function(resolve, reject){
+      setTimeout(function(){ resolve(v); }, ~~ms)
+    })
+  }, function(r){
+    return new P(function(resolve, reject){
+      setTimeout(function(){ reject(r); }, ~~ms)
+    })
+  })
+}
+
+Promise.timeout = function(promise, ms){
+  return this.race([promise, this.reject().wait(ms)]);
+}
+
 async function face(ctx, params) {
   const client = new Core({
     accessKeyId: 'LTAI4FcUTY6C6mReK4Eq8Bqz',
@@ -20,26 +37,34 @@ async function face(ctx, params) {
     method: 'POST'
   }
 
-  client.request('RecognizeFace', params, requestOption).then(async (result) => {
-      console.log( result.Data[0].score)
-      // if (result.Data.score < 0.4) {
-      //   return
-      // }
-      // 3. get personinfo from person id
-    
-      const userinfo = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
-      // console.log( userinfo.dataValues)
-      // publish a message to the chat channel
-      const ec = require('emitter-io').connect({host:"127.0.0.1", port:"8080"})
-      ec.publish({
-        key: emitterKey,
-        channel: channel,
-        message: JSON.stringify(userinfo.dataValues)
-      });
 
-    }, (ex) => {
-      console.log(ex);
-    })
+  // set timeout 2000 ms 
+  Promise.timeout(client.request('RecognizeFace', params, requestOption),2000).then(async (result) => {
+    console.log(result.Data[0].score)
+    if (result.Data[0].score < 0.4) {
+      return
+    }
+    // 3. get personinfo from person id
+    // console.log(result.Data[0])
+    const userinfo = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
+    // console.log( userinfo.dataValues)
+    // publish a message to the chat channel
+    const ec = require('emitter-io').connect({ host: "127.0.0.1", port: "8080" })
+    ec.publish({
+      key: emitterKey,
+      channel: channel,
+      message: JSON.stringify(userinfo.dataValues)
+    });
+  }, (ex) => {
+    // if timeout, publish timeout info to timeout channel.
+    console.log(ex);
+    const ec = require('emitter-io').connect({ host: "127.0.0.1", port: "8080" })
+    ec.publish({
+      key: "DhfPNWDeeBkLI1ym0VN8NP7GufF58rUE",
+      channel: "timeout",
+      message: "timeout"
+    });
+  })
 }
 
 class ImageInfoController extends Controller {
@@ -49,7 +74,7 @@ class ImageInfoController extends Controller {
 
     // console.log("body" + ctx.request.body.imageurl.length)
 
-    for (let i = 0 ; i< ctx.request.body.imageurl.length ; i++) {
+    for (let i = 0; i < ctx.request.body.imageurl.length; i++) {
       let params = {
         "Group": groups,
         "Content": ctx.request.body.imageurl[i]
@@ -58,7 +83,7 @@ class ImageInfoController extends Controller {
 
       await face(ctx, params)
     }
-    
+
     // 4. notify caller wait for info on emitter channel
     ctx.status = 200;
     ctx.body = {
