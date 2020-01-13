@@ -3,6 +3,7 @@
 const Controller = require('egg').Controller;
 // To-do: aliyun client should be resultful API. It's simple to add timeout etc. attribute.
 const Core = require('@alicloud/pop-core');
+const fs = require('fs');
 
 // emitter config
 const emitterKey = 'DdYjd8w_zH4UTj3OLWOqM8kSmbk9c68H';
@@ -29,7 +30,7 @@ async function face(ctx) {
   const requestOption = {
     method: 'POST'
   }
-
+  
   for (let i = 0; i < ctx.request.body.imageurl.length; i++) {
     console.time(`face${i}`)
     let params = {
@@ -39,7 +40,7 @@ async function face(ctx) {
     }
 
     let timeout = false
-    let i = setTimeout(() => { timeout = true }, aliyunTimeOut)
+    var j = setTimeout(() => { timeout = true }, aliyunTimeOut)
     // set timeout 2000 ms 
     client.request('RecognizeFace', params, requestOption).then(async (result) => {
       if (timeout == true) {
@@ -51,17 +52,17 @@ async function face(ctx) {
         });
         return
       }
-      clearTimeout(i)
+      clearTimeout(j)
 
       console.timeEnd(`face${i}`)
-      var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      fs.writeFile(`${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
-        if (err) {
-          console.log(err);
-        } else {
-        }
-      });
-      console.log('face yes -------------------')
+      // var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
+      // fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //   }
+      // });
+      // console.log('face yes -------------------')
 
       ctx.logger.info(`This image score is ${result.Data[0].score}`)
       // 3. get personinfo from person id

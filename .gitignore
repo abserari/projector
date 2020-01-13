@@ -6,3 +6,5 @@ face/sequelize/run/
 face/sequelize/logs/
 
 .DS_Store
+
+face/image/
