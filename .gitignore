@@ -4,3 +4,5 @@ face/sequelize/node_modules/
 face/sequelize/run/
 
 face/sequelize/logs/
+
+.DS_Store
