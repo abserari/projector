@@ -32,6 +32,7 @@ async function face(ctx) {
   }
   
   for (let i = 0; i < ctx.request.body.imageurl.length; i++) {
+    let start = performance.now()
     console.time(`face${i}`)
     let params = {
       "Group": aliyunGroups,
@@ -69,6 +70,7 @@ async function face(ctx) {
       // console.log(result.Data[0])
       const userinfo = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
 
+      userinfo.dataValues.timespend =  performance.now()-start;
       // publish a message to the chat channel
       ec.publish({
         key: emitterKey,
