@@ -3,6 +3,7 @@
 const Controller = require('egg').Controller;
 // To-do: aliyun client should be resultful API. It's simple to add timeout etc. attribute.
 const Core = require('@alicloud/pop-core');
+const { performance } = require('perf_hooks');
 const fs = require('fs');
 
 // emitter config
@@ -56,21 +57,23 @@ async function face(ctx) {
       clearTimeout(j)
 
       console.timeEnd(`face${i}`)
-      // var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      // fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
-      //   if (err) {
-      //     console.log(err);
-      //   } else {
-      //   }
-      // });
-      // console.log('face yes -------------------')
+      var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
+      fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+        }
+      });
+      console.log('face yes ------------------- '+result.Data[0].score)
 
-      ctx.logger.info(`This image score is ${result.Data[0].score}`)
+      ctx.logger.info(`This image ${result.Data[0].person} score is ${result.Data[0].score}`)
       // 3. get personinfo from person id
       // console.log(result.Data[0])
       const userinfo = await ctx.service.user.find(ctx.helper.parseInt(result.Data[0].person));
 
       userinfo.dataValues.timespend =  performance.now()-start;
+      userinfo.dataValues.score = result.Data[0].score
+      // console.log(userinfo.dataValues)
       // publish a message to the chat channel
       ec.publish({
         key: emitterKey,
@@ -124,7 +127,6 @@ class ImageInfoController extends Controller {
 
     client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
-      ctx.body = JSON.stringify(result);
     }, (ex) => {
       console.log(ctx.queries.imageurl)
       console.log(ex);
@@ -157,10 +159,8 @@ class ImageInfoController extends Controller {
 
     client.request('DeleteFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
-      ctx.body = JSON.stringify(result);
     }, (ex) => {
       console.log(ex);
-      ctx.body = ex
     })
   }
 }
