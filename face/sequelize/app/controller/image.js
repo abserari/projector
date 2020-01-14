@@ -137,6 +137,42 @@ class ImageInfoController extends Controller {
     }
   }
 
+  addByBase64() {
+    const ctx = this.ctx;
+
+    const client = new Core({
+      accessKeyId: accessKeyId,
+      accessKeySecret: accessKeySecret,
+      endpoint: aliyunEndpoint,
+      apiVersion: '2018-12-03'
+    });
+
+    let params = {
+      "Group": aliyunGroups,
+      "Person": ctx.query.person,
+      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
+      "Content": ctx.query.imageurl
+      // "ImageUrl" : ctx.query.imageurl
+    }
+
+    console.log("params: ", params)
+    const requestOption = {
+      method: 'POST'
+    };
+
+    client.request('AddFace', params, requestOption).then((result) => {
+      console.log(JSON.stringify(result));
+    }, (ex) => {
+      console.log(ctx.query.imageurl)
+      console.log(ex);
+    })
+
+    ctx.body = {
+      name: ctx.query.person,
+      imageurl: ctx.query.imageurl
+    }
+  }
+
   destroy() {
     const ctx = this.ctx;
     const client = new Core({
