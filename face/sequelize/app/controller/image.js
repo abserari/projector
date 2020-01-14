@@ -34,7 +34,6 @@ async function face(ctx) {
   
   for (let i = 0; i < ctx.request.body.imageurl.length; i++) {
     let start = performance.now()
-    console.time(`face${i}`)
     let params = {
       "Group": aliyunGroups,
       "Content": ctx.request.body.imageurl[i]
@@ -56,15 +55,14 @@ async function face(ctx) {
       }
       clearTimeout(j)
 
-      console.timeEnd(`face${i}`)
-      var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
-        if (err) {
-          console.log(err);
-        } else {
-        }
-      });
-      console.log('face yes ------------------- '+result.Data[0].score)
+      // var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
+      // fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //   }
+      // });
+      // console.log('face yes ------------------- '+result.Data[0].score)
 
       ctx.logger.info(`This image ${result.Data[0].person} score is ${result.Data[0].score}`)
       // 3. get personinfo from person id
@@ -115,9 +113,10 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Person": ctx.request.body.person,
-      "Image": aliyunImageNumber,
-      "Content": ctx.request.body.imageurl
+      "Person": ctx.queries.person[0],
+      "Image": ctx.queries.aliyunImageNumber[0] || aliyunImageNumber,
+      // "Content": ctx.queries.imageurl[0]
+      "ImageUrl" : ctx.queries.imageurl[0]
     }
 
     console.log("params: ", params)
@@ -149,15 +148,41 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Image": aliyunImageNumber,
-      "Person":  ctx.request.body.person
+      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
+      "Person":  ctx.query.person
+    }
+
+    console.log(params)
+    const requestOption = {
+      method: 'POST'
+    };
+
+    client.request('DeleteFace', params, requestOption).then((result) => {
+      console.log('delete '+ctx.queries.person[0] + ' '+ ctx.query.aliyunImageNumber+ ' ' +aliyunImageNumber)
+      console.log(JSON.stringify(result));
+    }, (ex) => {
+      console.log(ex);
+    })
+  }
+
+  list() {
+    const ctx = this.ctx;
+    const client = new Core({
+      accessKeyId: accessKeyId,
+      accessKeySecret: accessKeySecret,
+      endpoint: aliyunEndpoint,
+      apiVersion: '2018-12-03'
+    });
+
+    let params = {
+      "Group": aliyunGroups,
     }
 
     const requestOption = {
       method: 'POST'
     };
 
-    client.request('DeleteFace', params, requestOption).then((result) => {
+    client.request('ListFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
     }, (ex) => {
       console.log(ex);
