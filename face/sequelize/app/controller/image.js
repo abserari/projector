@@ -113,10 +113,9 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Person": ctx.query.person,
-      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
-      // "Content": ctx.queries.imageurl[0]
-      "ImageUrl" : ctx.query.imageurl
+      "Person": ctx.request.body.Person,
+      "Image": ctx.request.body.Image || aliyunImageNumber,
+      "ImageUrl" : ctx.request.body.ImageUrl
     }
 
     console.log("params: ", params)
@@ -127,13 +126,13 @@ class ImageInfoController extends Controller {
     client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
     }, (ex) => {
-      console.log(ctx.query.imageurl)
+      console.log(ctx.request.body.ImageUrl)
       console.log(ex);
     })
 
     ctx.body = {
-      name: ctx.query.person,
-      imageurl: ctx.query.imageurl
+      name: ctx.request.body.Person,
+      imageurl: ctx.request.body.ImageUrl
     }
   }
 
@@ -149,10 +148,9 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Person": ctx.query.person,
-      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
-      "Content": ctx.query.imageurl
-      // "ImageUrl" : ctx.query.imageurl
+      "Person": ctx.request.body.Person,
+      "Image": ctx.request.body.Image || aliyunImageNumber,
+      "Content": ctx.request.body.Content
     }
 
     console.log("params: ", params)
@@ -163,13 +161,12 @@ class ImageInfoController extends Controller {
     client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
     }, (ex) => {
-      console.log(ctx.query.imageurl)
       console.log(ex);
     })
 
     ctx.body = {
-      name: ctx.query.person,
-      imageurl: ctx.query.imageurl
+      name: ctx.request.body.Person,
+      content: ctx.request.body.Content
     }
   }
 
@@ -184,8 +181,8 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
-      "Person":  ctx.query.person
+      "Image": ctx.request.body.Image || aliyunImageNumber,
+      "Person":  ctx.request.body.Person
     }
 
     console.log(params)
@@ -194,7 +191,7 @@ class ImageInfoController extends Controller {
     };
 
     client.request('DeleteFace', params, requestOption).then((result) => {
-      console.log('delete '+ctx.queries.person[0] + ' '+ ctx.query.aliyunImageNumber+ ' ' +aliyunImageNumber)
+      console.log('delete '+ctx.request.body.Person + ' '+ ctx.request.body.Image+ ' ' +aliyunImageNumber)
       console.log(JSON.stringify(result));
     }, (ex) => {
       console.log(ex);
