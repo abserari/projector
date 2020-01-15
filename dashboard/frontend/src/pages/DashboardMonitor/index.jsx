@@ -6,7 +6,6 @@ import ReactAwesomeClock from 'react-awesome-clock';
 import { WaterWave, Gauge } from './components/Charts';
 import Thermometer from 'react-thermometer-component';
 import Sub from './pub_sub.js'
-import ColorPicker from 'rc-color-picker';
 
 class DashboardMonitor extends Component {
   componentDidMount() {
@@ -18,10 +17,8 @@ class DashboardMonitor extends Component {
     const { dashboardMonitor } = this.props;
     const { pm, tem, hum } = dashboardMonitor;
     const titleSize = '60px';
-    const backgroundColor = '#fff8cd'
     return (
       <GridContent>
-        <ColorPicker Color='#67C6F6'/>
         <div style={{background:'#fff8cd'}}>
         <React.Fragment>
           <Row gutter={6}>
