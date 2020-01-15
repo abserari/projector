@@ -35,14 +35,19 @@ const PersonInfoModel = {
         payload: payload,
       });
     },
+    *markPerson({ payload }, { put }) {
+      yield put({
+        type: 'addToOutstandingPerson',
+        payload: payload,
+      });
+    },
   },
 
   reducers: {
     modifyPersons(state, { payload }) {
-      let tmpArr = state.persons.unshift(state.persons.splice(payload, 1)[0]);
+      state.persons.unshift(state.persons.splice(payload, 1)[0]);
       return {
         ...state,
-        persons: [...tmpArr],
       };
     },
     saveTimeSpend(state, action) {
@@ -53,19 +58,31 @@ const PersonInfoModel = {
       };
     },
     addToPersons(state, { payload }) {
-      let tmpArr = state.persons.unshift(payload);
+      state.persons.unshift(payload);
       return {
         ...state,
-        persons: [...tmpArr],
       };
     },
     modifyCurrent(state, { payload }) {
       let storage = window.localStorage;
       storage.setItem('person', JSON.stringify(payload));
-      console.log(storage.getItem('person'));
       return {
         ...state,
         currentPerson: payload,
+      };
+    },
+    addToOutstandingPerson(state, { payload }) {
+      for (let i = 0; i < state.outstandPerson.length; i++) {
+        if (state.outstandPerson[i].id === payload.id) {
+          state.outstandPerson.unshift(state.outstandPerson.splice(i, 1)[0]);
+          return {
+            ...state,
+          };
+        }
+      }
+      state.outstandPerson.unshift(payload);
+      return {
+        ...state,
       };
     },
   },

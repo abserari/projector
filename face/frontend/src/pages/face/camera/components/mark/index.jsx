@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { connect } from 'dva';
-import { Row, Col, Card, Button } from 'antd';
+import { Row, Col, Button, Card } from 'antd';
 
 import styles from './index.less';
 
@@ -13,17 +13,9 @@ class PersonInfo extends Component {
     });
   }
 
-  markPerson(data) {
-    const { dispatch } = this.props.that.props;
-    dispatch({
-      type: 'personInfo/markPerson',
-      payload: data,
-    });
-  }
-
   render() {
     return (
-      <Card hoverable={true} style={{ marginBottom: '1vh', height: '20vh', width: '100%' }}>
+      <Card hoverable={true} style={{ marginBottom: '1vh', height: '20vh', width: '40%' }}>
         <Row justify="space-around" className={styles.row}>
           <Col span={3}>
             <img
@@ -44,9 +36,6 @@ class PersonInfo extends Component {
             >
               替换当前
             </Button>
-            <Button className={styles.button} onClick={() => this.markPerson(this.props.data)}>
-              标记
-            </Button>
           </Col>
         </Row>
       </Card>
@@ -54,13 +43,12 @@ class PersonInfo extends Component {
   }
 }
 
-class PersonList extends Component {
-  state = {};
+class Mark extends Component {
   generatePersonInfo() {
     const { personInfo } = this.props;
     let list = [];
-    personInfo.persons.forEach(element => {
-      list.push(<PersonInfo key={element.id} data={element} that={this}></PersonInfo>);
+    personInfo.outstandPerson.forEach(element => {
+      list.push(<PersonInfo key={element.name} data={element} that={this}></PersonInfo>);
     });
     return list;
   }
@@ -72,4 +60,4 @@ class PersonList extends Component {
 
 export default connect(({ personInfo }) => ({
   personInfo: personInfo,
-}))(PersonList);
+}))(Mark);

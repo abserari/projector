@@ -7,6 +7,7 @@ import styles from './index.less';
 import Gauge from './components/gauge';
 import PersonList from './components/personInfo';
 import Controller from './components/control';
+import Mark from './components/mark';
 
 const faceapi = require('face-api.js');
 const emitter = require('emitter-io');
@@ -28,11 +29,11 @@ class Face extends Component {
   };
 
   async componentDidMount() {
-    // await faceapi.loadSsdMobilenetv1Model('http://127.0.0.1:9090');
-    // await this.openWebcam();
-    // const video = document.getElementById('inputVideo');
-    // video.srcObject = this.state.stream;
-    // this.getMessage(this);
+    await faceapi.loadSsdMobilenetv1Model('http://127.0.0.1:9090');
+    await this.openWebcam();
+    const video = document.getElementById('inputVideo');
+    video.srcObject = this.state.stream;
+    this.getMessage(this);
   }
 
   getMessage = that => {
@@ -169,7 +170,7 @@ class Face extends Component {
   render() {
     return (
       <div>
-        <Row className={styles.Row}>
+        <Row>
           <Col span={8}>
             <Card className={styles.card} title="原数据">
               <div>
@@ -200,6 +201,14 @@ class Face extends Component {
               <Col span={12}></Col>
             </Row>
           </Col>
+        </Row>
+        <Row>
+          <Card
+            style={{ marginTop: '2vh', width: '90%', marginLeft: '3%', marginBottom: '2vh' }}
+            title="标注"
+          >
+            <Mark></Mark>
+          </Card>
         </Row>
       </div>
     );
