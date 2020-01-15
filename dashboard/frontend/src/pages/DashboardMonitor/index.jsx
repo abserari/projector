@@ -125,7 +125,7 @@ class DashboardMonitor extends Component {
                 <div class="contain">
                   <p style={{ fontSize: titleSize }}>PM2.5</p>
                 </div>
-                <Gauge title="PM2.5" height={255} percent={pm} />
+                <Gauge title="PM2.5" height={255} percent={300} />
               </Card>
             </Col>
           </Row>
