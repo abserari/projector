@@ -37,7 +37,7 @@ class DashboardMonitor extends Component {
                 }}
                 bordered={true}
               >
-                <div class="contain">
+                <div class="contain" >
                   <p style={{ fontSize: titleSize }}>北京时间</p>
                   <br></br>
                   <br></br>
@@ -125,7 +125,7 @@ class DashboardMonitor extends Component {
                 <div class="contain">
                   <p style={{ fontSize: titleSize }}>PM2.5</p>
                 </div>
-                <Gauge title="PM2.5" height={255} percent={300} />
+                <Gauge title="PM2.5" height={255} percent={pm} />
               </Card>
             </Col>
           </Row>
