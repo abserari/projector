@@ -101,7 +101,7 @@ class ImageInfoController extends Controller {
     }
   }
 
-  add() {
+  async add() {
     const ctx = this.ctx;
 
     const client = new Core({
@@ -123,20 +123,27 @@ class ImageInfoController extends Controller {
       method: 'POST'
     };
 
-    client.request('AddFace', params, requestOption).then((result) => {
+    var result = await client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
+      let info = {
+        status:200,
+        result: result
+      }
+      return info
     }, (ex) => {
       console.log(ctx.request.body.ImageUrl)
       console.log(ex);
+      let info = {
+        status:400,
+        result: ex
+      }
     })
 
-    ctx.body = {
-      name: ctx.request.body.Person,
-      imageurl: ctx.request.body.ImageUrl
-    }
+    ctx.body = result
+    ctx.status = result.status
   }
 
-  addByBase64() {
+  async addByBase64() {
     const ctx = this.ctx;
 
     const client = new Core({
@@ -158,19 +165,26 @@ class ImageInfoController extends Controller {
       method: 'POST'
     };
 
-    client.request('AddFace', params, requestOption).then((result) => {
+    var result = await client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
+      let info = {
+        status:200,
+        result:result
+      }
+      return info;
     }, (ex) => {
+      let info = {
+        status: 400,
+        result: ex
+      }
       console.log(ex);
+      return info
     })
-
-    ctx.body = {
-      name: ctx.request.body.Person,
-      content: ctx.request.body.Content
-    }
+    ctx.status = result.status
+    ctx.body = result
   }
 
-  destroy() {
+  async destroy() {
     const ctx = this.ctx;
     const client = new Core({
       accessKeyId: accessKeyId,
@@ -190,15 +204,29 @@ class ImageInfoController extends Controller {
       method: 'POST'
     };
 
-    client.request('DeleteFace', params, requestOption).then((result) => {
-      console.log('delete '+ctx.request.body.Person + ' '+ ctx.request.body.Image+ ' ' +aliyunImageNumber)
+    var result = await client.request('DeleteFace', params, requestOption).then((result) => {
+      let quote = 'delete '+ctx.request.body.Person + ' '+ ctx.request.body.Image+ ' ' +aliyunImageNumber
+      console.log('delete '+ctx.request.body.Person + ' '+ ctx.request.body.Image)
       console.log(JSON.stringify(result));
+      let info = {
+        status: 200,
+        result: result,
+        quote:quote
+      }
+      return info
     }, (ex) => {
       console.log(ex);
+      let info = {
+        status: 400,
+        ex: ex
+      }
+      return info
     })
+    ctx.status = result.status
+    ctx.body = result
   }
 
-  list() {
+  async list() {
     const ctx = this.ctx;
     const client = new Core({
       accessKeyId: accessKeyId,
@@ -215,11 +243,24 @@ class ImageInfoController extends Controller {
       method: 'POST'
     };
 
-    client.request('ListFace', params, requestOption).then((result) => {
+    var result = await client.request('ListFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
+      let info = {
+        status:200,
+        result:result
+      }
+      return info
     }, (ex) => {
+      let info = {
+        status:400,
+        ex:ex
+      }
       console.log(ex);
+      return info
     })
+    
+    ctx.body = result
+    ctx.status = result.status
   }
 }
 
