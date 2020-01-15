@@ -1,8 +1,164 @@
 import { Component } from 'react';
 import { connect } from 'dva';
-import { Row, Col, InputNumber } from 'antd';
+import { Row, Col, InputNumber, Button, Modal, Form, Input } from 'antd';
+import axios from 'axios';
+
+const AddFaceForm = Form.create({ name: 'add_face_form' })(
+  class extends React.Component {
+    render() {
+      const { visible, onCancel, onCommit, form } = this.props;
+      const { getFieldDecorator } = form;
+      return (
+        <Modal visible={visible} title="上传图片" okText="上传" onCancel={onCancel} onOk={onCommit}>
+          <Form layout="vertical">
+            <Form.Item label="Group">
+              {getFieldDecorator('Group', {
+                rules: [{ required: true }],
+                initialValue: 'workers',
+              })(<Input />)}
+            </Form.Item>
+            <Form.Item label="Person">
+              {getFieldDecorator('Person', { rules: [{ required: true }] })(
+                <Input type="textarea" />,
+              )}
+            </Form.Item>
+            <Form.Item label="Image">
+              {getFieldDecorator('Image')(<Input type="textarea" />)}
+            </Form.Item>
+            <Form.Item label="ImageBase64">
+              {getFieldDecorator('Content')(<Input type="textarea" />)}
+            </Form.Item>
+            <Form.Item label="ImageUrl">
+              {getFieldDecorator('ImageUrl')(<Input type="textarea" />)}
+            </Form.Item>
+          </Form>
+        </Modal>
+      );
+    }
+  },
+);
+
+const DeleteFaceForm = Form.create({ name: 'delete_face_form' })(
+  class extends React.Component {
+    render() {
+      const { visible, onCancel, onCommit, form } = this.props;
+      const { getFieldDecorator } = form;
+      return (
+        <Modal visible={visible} title="删除图片" okText="确认" onCancel={onCancel} onOk={onCommit}>
+          <Form layout="vertical">
+            <Form.Item label="Group">
+              {getFieldDecorator('Group', {
+                rules: [{ required: true }],
+                initialValue: 'workers',
+              })(<Input />)}
+            </Form.Item>
+            <Form.Item label="Person">
+              {getFieldDecorator('Person', { rules: [{ required: true }] })(
+                <Input type="textarea" />,
+              )}
+            </Form.Item>
+            <Form.Item label="Image">
+              {getFieldDecorator('Image')(<Input type="textarea" />)}
+            </Form.Item>
+          </Form>
+        </Modal>
+      );
+    }
+  },
+);
 
 class Controller extends Component {
+  state = {
+    addFaceVisible: false,
+    deleteFaceVisible: false,
+  };
+
+  showAddFaceModal() {
+    this.setState({
+      addFaceVisible: true,
+    });
+  }
+
+  addFaceHandOk() {
+    const { form } = this.addFormRef.props;
+    form.validateFields(async (err, value) => {
+      if (err) {
+        return;
+      }
+      if (value.ImageUrl && !value.Content) {
+        await axios
+          .post('http://192.168.0.121:7001/image/add', {
+            ...value,
+          })
+          .then(resp => {})
+          .catch(err => {
+            console.log(err);
+          });
+      }
+
+      if (value.Content && !value.ImageUrl) {
+        await axios
+          .post('http://192.168.0.121:7001/image/addBase', {
+            ...value,
+          })
+          .then(resp => {})
+          .catch(err => {
+            console.log(err);
+          });
+      }
+    });
+    this.setState({
+      addFaceVisible: false,
+    });
+  }
+
+  addFaceHandCancel() {
+    this.setState({
+      addFaceVisible: false,
+    });
+  }
+
+  saveAddFormRef = formRef => {
+    this.addFormRef = formRef;
+  };
+
+  showDeleteFaceModal() {
+    this.setState({
+      deleteFaceVisible: true,
+    });
+  }
+
+  deleteFaceHandOk() {
+    const { form } = this.deleteFormRef.props;
+    form.validateFields(async (err, value) => {
+      if (err) {
+        return;
+      }
+      await axios
+        .post('http://192.168.0.121:7001/image/destroy', {
+          Person: value.Person,
+          Image: value.Image,
+        })
+        .then(resp => {})
+        .catch(err => {
+          console.log(err);
+        });
+    });
+    this.setState({
+      deleteFaceVisible: false,
+    });
+  }
+
+  deleteFaceHandCancel() {
+    this.setState({
+      deleteFaceVisible: false,
+    });
+  }
+
+  saveDeleteFormRef = formRef => {
+    this.deleteFormRef = formRef;
+  };
+
   onChangeScore(value) {
     const { dispatch } = this.props;
     dispatch({
@@ -59,6 +215,24 @@ class Controller extends Component {
             onChange={this.onChangeArea.bind(this)}
           />
         </Col>
+        <Col>
+          <Button onClick={this.showAddFaceModal.bind(this)}>上传图片</Button>
+        </Col>
+        <Col>
+          <Button onClick={this.showDeleteFaceModal.bind(this)}>删除图片</Button>
+        </Col>
+        <AddFaceForm
+          wrappedComponentRef={this.saveAddFormRef}
+          visible={this.state.addFaceVisible}
+          onCancel={this.addFaceHandCancel.bind(this)}
+          onCommit={this.addFaceHandOk.bind(this)}
+        ></AddFaceForm>
+        <DeleteFaceForm
+          wrappedComponentRef={this.saveDeleteFormRef}
+          visible={this.state.deleteFaceVisible}
+          onCancel={this.deleteFaceHandCancel.bind(this)}
+          onCommit={this.deleteFaceHandOk.bind(this)}
+        ></DeleteFaceForm>
       </Row>
     );
   }

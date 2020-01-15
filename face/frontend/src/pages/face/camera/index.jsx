@@ -28,12 +28,11 @@ class Face extends Component {
   };
 
   async componentDidMount() {
-    await faceapi.loadSsdMobilenetv1Model('http://127.0.0.1:9090');
-    await this.openWebcam();
-
-    const video = document.getElementById('inputVideo');
-    video.srcObject = this.state.stream;
-    this.getMessage(this);
+    // await faceapi.loadSsdMobilenetv1Model('http://127.0.0.1:9090');
+    // await this.openWebcam();
+    // const video = document.getElementById('inputVideo');
+    // video.srcObject = this.state.stream;
+    // this.getMessage(this);
   }
 
   getMessage = that => {
