@@ -5,32 +5,16 @@ import { connect } from 'dva';
 import ReactAwesomeClock from 'react-awesome-clock';
 import { WaterWave, Gauge } from './components/Charts';
 import Thermometer from 'react-thermometer-component';
+import Sub from './pub_sub.js'
 
 class DashboardMonitor extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
-    const Sub = () => {
-      const client = require('emitter-io').connect({ host: '127.0.0.1', port: '8080' }); // once we're connected, subscribe to the 'chat' channel
-
-      client.subscribe({
-        key: 'Ws8wxZjTP9GbEbncf8FYCHr_volK1Bbu',
-        channel: 'pine',
-      });
-
-      client.on('message', function(msg) {
-        const ob = msg.asObject();
-        dispatch({
-          type: 'dashboardMonitor/changePM25',
-          payload: 70,
-        });
-        console.log(ob.pm);
-      });
-    };
-    Sub();
+    Sub(dispatch);
   }
 
   render() {
-    const { dashboardMonitor, loading } = this.props;
+    const { dashboardMonitor } = this.props;
     const { pm, tem, hum } = dashboardMonitor;
     const titleSize = '60px';
     return (

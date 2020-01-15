@@ -4,7 +4,7 @@ import styles from './index.less';
 
 let state = {
   pm: 0,
-  tmp: 0,
+  tem: 0,
   hum:0
 }
 
@@ -12,8 +12,8 @@ export default () => {
   const changePm = (value) => {
     state.pm = value
   }
-  const changeTmp = (value) => {
-    state.tmp = value
+  const changeTem= (value) => {
+    state.tem = value
   }
   const changeHum = (value) => {
     state.hum = value
@@ -40,7 +40,7 @@ export default () => {
           <p></p>
           <Input
             addonBefore="温度"
-            onChange={e => changeTmp(e.target.value)}
+            onChange={e => changeTem(e.target.value)}
           />
           <p></p>
           <Input

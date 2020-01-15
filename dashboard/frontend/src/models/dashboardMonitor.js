@@ -6,20 +6,32 @@ const Model = {
     hum: 30,
   },
   effects: {
-    *changePM25({ value }, { put }) {
-      console.log('here');
+    *update({ payload } , { put }) {
+      console.log('here',payload);
       yield put({
-        type: 'PM25',
-        payload: value,
+        type: 'changeData',
+        payload: payload,
       });
     },
+    
+    *update({ payload } , { put }) {
+        console.log('here',payload);
+        yield put({
+          type: 'changeData',
+          payload: payload,
+        });
+      },
   },
+
   reducers: {
-    PM25(value) {
-      state = {
-        pm: value,
-      };
-      return state;
+    changeData(state,{ payload }) {
+     console.log(payload, 'here again')
+      return {
+          ...state,
+          pm: payload.pm,
+          tem: payload.tem,
+          hum: payload.hum
+        };
     },
   },
 };
