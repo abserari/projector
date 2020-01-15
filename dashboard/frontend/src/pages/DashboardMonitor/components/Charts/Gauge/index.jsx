@@ -97,7 +97,7 @@ const Gauge = props => {
   </div>`;
 
   const textStyle = {
-    fontSize: 12,
+    fontSize: 20,
     fill: 'rgba(0, 0, 0, 0.65)',
     textAlign: 'center',
   };
