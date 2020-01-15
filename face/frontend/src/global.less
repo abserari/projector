@@ -1,0 +1,110 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+}
+
+.forward-enter {
+  &:extend(.main);
+  opacity: 0;
+}
+
+.forward-enter-active {
+  &:extend(.main);
+  opacity: 1;
+  transition: all 1000ms ease-in;
+}
+
+.forward-exit {
+  &:extend(.main);
+  opacity: 1;
+}
+
+.forward-exit-active {
+  &:extend(.main);
+  opacity: 0;
+  transition: all 1000ms ease-in;
+}
+
+.back-enter {
+  &:extend(.main);
+  opacity: 0;
+  // transform: translateX(-100%);
+}
+
+.back-enter-active {
+  &:extend(.main);
+  opacity: 1;
+  // transform: translateX(0);
+  transition: all 1000ms ease-in;
+}
+
+.back-exit {
+  &:extend(.main);
+  opacity: 1;
+  // transform: translateX(0);
+}
+
+.back-exit-active {
+  &:extend(.main);
+  opacity: 0;
+  // transform: translate(100%);
+  transition: all 1000ms ease-in;
+}
