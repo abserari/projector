@@ -39,3 +39,13 @@ const Model = {
 };
 
 export default Model;
+
+const getValue=()=>{
+    
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i); 
+        console.log(key);
+        console.log(localStorage.getItem(key));
+        
+    }
+}

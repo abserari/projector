@@ -5,7 +5,7 @@ import { connect } from 'dva';
 import ReactAwesomeClock from 'react-awesome-clock';
 import { WaterWave, Gauge } from './components/Charts';
 import Thermometer from 'react-thermometer-component';
-import Sub from './pub_sub.js'
+import Sub from './sub.js'
 
 class DashboardMonitor extends Component {
   componentDidMount() {
