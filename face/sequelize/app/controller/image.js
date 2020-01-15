@@ -113,10 +113,10 @@ class ImageInfoController extends Controller {
 
     let params = {
       "Group": aliyunGroups,
-      "Person": ctx.queries.person[0],
-      "Image": ctx.queries.aliyunImageNumber[0] || aliyunImageNumber,
+      "Person": ctx.query.person,
+      "Image": ctx.query.aliyunImageNumber || aliyunImageNumber,
       // "Content": ctx.queries.imageurl[0]
-      "ImageUrl" : ctx.queries.imageurl[0]
+      "ImageUrl" : ctx.query.imageurl
     }
 
     console.log("params: ", params)
@@ -127,13 +127,13 @@ class ImageInfoController extends Controller {
     client.request('AddFace', params, requestOption).then((result) => {
       console.log(JSON.stringify(result));
     }, (ex) => {
-      console.log(ctx.queries.imageurl)
+      console.log(ctx.query.imageurl)
       console.log(ex);
     })
 
     ctx.body = {
-      name: ctx.queries.person[0],
-      imageurl: ctx.queries.imageurl[0]
+      name: ctx.query.person,
+      imageurl: ctx.query.imageurl
     }
   }
 
