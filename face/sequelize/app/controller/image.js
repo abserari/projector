@@ -80,7 +80,6 @@ async function face(ctx) {
       });
     }, (ex) => {
       console.log(ex);
-      console.timeEnd(`face${i}`)
     })
   }
 }
@@ -137,6 +136,7 @@ class ImageInfoController extends Controller {
         status:400,
         result: ex
       }
+      return info
     })
 
     ctx.body = result
