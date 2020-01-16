@@ -1,4 +1,5 @@
-import defaultSettings from '/Users/yang/go/src/github.com/yhyddr/projector/dashboard/frontend/config/defaultSettings.js';
+import defaultSettings from '../../../../config/defaultSettings.js';
+
 const { hostIP,port,secretKey,channel } = defaultSettings; 
 
 const Publish = value => {

@@ -14,7 +14,7 @@ export default {
   title: 'Ant Design Pro',
   pwa: false,
   iconfontUrl: '',
-  hostIP: '127.0.0.1',
+  hostIP: '192.168.43.77',
   port : '8080',
   secretKey: 'Ws8wxZjTP9GbEbncf8FYCHr_volK1Bbu',
   channel: 'pine',
