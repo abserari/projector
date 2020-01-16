@@ -85,6 +85,10 @@ export default {
       ],
     },
     {
+      path: '/',
+      redirect: '/dashboardmonitor',
+    },
+    {
       path: '/admin',
       name: 'admin',
       icon: 'crown',

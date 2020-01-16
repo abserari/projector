@@ -1,9 +1,9 @@
 const Model = {
   namespace: 'dashboardMonitor',
   state: {
-    pm: 23,
-    tem: 45,
-    hum:43,
+    pm: getValue('pm'),
+    tem: getValue('tem'),
+    hum:getValue('hum'),
   },
   effects: {
     *update({ payload } , { put }) {
@@ -34,7 +34,8 @@ export default Model;
 function getValue(key){
   const state=localStorage.getItem('data')
   const value= JSON.parse(state)
-  if (value[key]=null){
+  console.log(value[key],"uu")
+  if (value[key] == null){
       return 30
   }
   return value[key]

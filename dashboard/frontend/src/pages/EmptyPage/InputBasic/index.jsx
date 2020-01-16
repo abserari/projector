@@ -20,8 +20,6 @@ export default () => {
     state.hum = value
   }
 
- 
-
   return (
     <div className={styles.container}>
       <div id="components-input-demo-basic">
