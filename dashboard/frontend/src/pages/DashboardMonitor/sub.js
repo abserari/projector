@@ -1,9 +1,12 @@
+import defaultSettings from'/Users/yang/go/src/github.com/yhyddr/projector/dashboard/frontend/config/defaultSettings.js';
+const { hostIP,port,secretKey,channel } = defaultSettings; 
+
 const Sub = (dispatch) => {
-    const client = require('emitter-io').connect({ host: '127.0.0.1', port: '8080' }); // once we're connected, subscribe to the 'chat' channel
+    const client = require('emitter-io').connect({ host: hostIP, port:port });
 
     client.subscribe({
-      key: 'Ws8wxZjTP9GbEbncf8FYCHr_volK1Bbu',
-      channel: 'pine',
+      key: secretKey,
+      channel: channel,
     });
 
     client.on('message', function(msg) {

@@ -1,9 +1,12 @@
+import defaultSettings from '/Users/yang/go/src/github.com/yhyddr/projector/dashboard/frontend/config/defaultSettings.js';
+const { hostIP,port,secretKey,channel } = defaultSettings; 
+
 const Publish = value => {
-    const client = require('emitter-io').connect({ host: '127.0.0.1', port: '8080' });
+    const client = require('emitter-io').connect({ host: hostIP, port: port});
 
     client.publish({
-      key: 'Ws8wxZjTP9GbEbncf8FYCHr_volK1Bbu',
-      channel: 'pine',
+      key: secretKey,
+      channel: channel,
       message: JSON.stringify(value),
     });
   };
