@@ -1,7 +1,7 @@
-import defaultSettings from'../../../config/defaultSettings.js';
+import defaultSettings from'../../config/defaultSettings.js';
 const { hostIP,port,secretKey,channel } = defaultSettings; 
 
-const Sub = (dispatch) => {
+function Sub(dispatch) {
     const client = require('emitter-io').connect({ host: hostIP, port:port });
 
     client.subscribe({
@@ -23,5 +23,18 @@ const Sub = (dispatch) => {
     });
   };
 
-export default Sub;
+
+  export function Publish(value){
+    const client = require('emitter-io').connect({ host: hostIP, port: port});
+
+    client.publish({
+      key: secretKey,
+      channel: channel,
+      message: JSON.stringify(value),
+    });
+  };
+
+  export default Sub;
+
+
 
