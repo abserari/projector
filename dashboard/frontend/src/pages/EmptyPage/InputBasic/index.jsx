@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input,Button } from 'antd';
 import styles from './index.less';
-import Publish from '../../../services/pub_sub.js'
+import Publish from './pub.js'
 
 let state = {
   pm: 0,
