@@ -53,6 +53,9 @@ async function face(ctx) {
         });
         return
       }
+      if (result.Data[0].score < 0.3) {
+        return
+      }
       clearTimeout(j)
 
       // var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
