@@ -57,4 +57,4 @@ npm test
 You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
 
 ## Usage
-you should create emitter by this artical [Emitter Usage](https://www.yuque.com/abser/process/rfwpqu) firstly. Then change your emitter information at "config/defaultSettings". Following to install dependencies and start.
+you should create emitter by this artical [Emitter Usage](https://www.yuque.com/abser/process/rfwpqu) firstly. Then change your emitter information at "frontend/config/defaultSettings.js". Following to install dependencies and start.
