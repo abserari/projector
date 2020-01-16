@@ -34,9 +34,10 @@ export default Model;
 function getValue(key){
   const state=localStorage.getItem('data')
   const value= JSON.parse(state)
-  console.log(value[key],"uu")
-  if (value[key] == null){
+
+  if (value == null){
       return 30
   }
+  
   return value[key]
 }
