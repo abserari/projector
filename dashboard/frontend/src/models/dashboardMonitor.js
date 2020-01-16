@@ -1,9 +1,9 @@
 const Model = {
   namespace: 'dashboardMonitor',
   state: {
-    pm: 10,
-    tem: 20,
-    hum: 30,
+    pm: getValue('pm'),
+    tem: getValue('tem'),
+    hum: getValue('hum'),
   },
   effects: {
     *update({ payload } , { put }) {
@@ -12,17 +12,8 @@ const Model = {
         payload: payload,
       });
     },
-
-    // *store({ payload } , { put }) {
-    //     yield put({
-    //       type: 'service/storeData',
-    //       payload: payload,
-    //     });
-    //   },
     store({payload}){
-        let i=1
-        localStorage.setItem(i,JSON.stringify(payload))
-        i++
+        localStorage.setItem('data',JSON.stringify(payload))
     }
   },
 
@@ -40,12 +31,8 @@ const Model = {
 
 export default Model;
 
-const getValue=()=>{
-    
-    for (var i = 0; i < localStorage.length; i++) {
-        var key = localStorage.key(i); 
-        console.log(key);
-        console.log(localStorage.getItem(key));
-        
-    }
+function getValue(key){
+  const state=localStorage.getItem('data')
+  const value= JSON.parse(state)
+  return value[key]
 }
