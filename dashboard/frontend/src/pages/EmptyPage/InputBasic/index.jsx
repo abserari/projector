@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input,Button } from 'antd';
 import styles from './index.less';
+import Publish from './pub.js'
 
 let state = {
   pm: 0,
@@ -19,15 +20,7 @@ export default () => {
     state.hum = value
   }
 
-  const publish = value => {
-    const client = require('emitter-io').connect({ host: '127.0.0.1', port: '8080' });
-
-    client.publish({
-      key: 'Ws8wxZjTP9GbEbncf8FYCHr_volK1Bbu',
-      channel: 'pine',
-      message: JSON.stringify(value),
-    });
-  };
+ 
 
   return (
     <div className={styles.container}>
@@ -48,7 +41,7 @@ export default () => {
             onChange={e => changeHum(e.target.value)}
           />
           <p></p>
-          <Button type="primary" onClick={() => publish(state)}>
+          <Button type="primary" onClick={() => Publish(state)}>
            提交
           </Button>
       </Input.Group>

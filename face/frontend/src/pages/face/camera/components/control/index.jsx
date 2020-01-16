@@ -90,7 +90,9 @@ class Controller extends Component {
           .post('http://192.168.0.121:7001/image/add', {
             ...value,
           })
-          .then(resp => {})
+          .then(resp => {
+            console.log(resp);
+          })
           .catch(err => {
             console.log(err);
           });
@@ -101,7 +103,9 @@ class Controller extends Component {
           .post('http://192.168.0.121:7001/image/addBase', {
             ...value,
           })
-          .then(resp => {})
+          .then(resp => {
+            console.log(resp);
+          })
           .catch(err => {
             console.log(err);
           });
@@ -139,7 +143,9 @@ class Controller extends Component {
           Person: value.Person,
           Image: value.Image,
         })
-        .then(resp => {})
+        .then(resp => {
+          console.log(resp);
+        })
         .catch(err => {
           console.log(err);
         });

@@ -5,7 +5,7 @@ import { connect } from 'dva';
 import ReactAwesomeClock from 'react-awesome-clock';
 import { WaterWave, Gauge } from './components/Charts';
 import Thermometer from 'react-thermometer-component';
-import Sub from './pub_sub.js'
+import Sub from './sub.js'
 
 class DashboardMonitor extends Component {
   componentDidMount() {
@@ -19,6 +19,7 @@ class DashboardMonitor extends Component {
     const titleSize = '60px';
     return (
       <GridContent>
+        <div style={{background:'#fff8cd'}}>
         <React.Fragment>
           <Row gutter={6}>
             <Col
@@ -36,9 +37,10 @@ class DashboardMonitor extends Component {
                   textAlign: 'center',
                 }}
                 bordered={true}
+                style={{background: '#efe9cc'}}
               >
-                <div class="contain">
-                  <p style={{ fontSize: titleSize }}>北京时间</p>
+                <div class="contain" >
+                  <p style={{ fontSize: titleSize, background: '#eadea6'}}>北京时间</p>
                   <br></br>
                   <br></br>
                 </div>
@@ -66,6 +68,7 @@ class DashboardMonitor extends Component {
                 bodyStyle={{
                   textAlign: 'center',
                 }}
+                style={{background: '#eadea6'}}
               >
                 <div class="contain">
                   <p style={{ fontSize: titleSize }}>湿度</p>
@@ -89,6 +92,7 @@ class DashboardMonitor extends Component {
                   alignContent: 'center',
                 }}
                 bordered={true}
+                style={{background: '#eadea6'}}
               >
                 <div class="contain">
                   <p style={{ fontSize: titleSize }}>温度</p>
@@ -121,6 +125,7 @@ class DashboardMonitor extends Component {
                 bodyStyle={{
                   textAlign: 'center',
                 }}
+                style={{background: '#eadea6'}}
               >
                 <div class="contain">
                   <p style={{ fontSize: titleSize }}>PM2.5</p>
@@ -131,6 +136,7 @@ class DashboardMonitor extends Component {
           </Row>
           <Row></Row>
         </React.Fragment>
+        </div>
       </GridContent>
     );
   }

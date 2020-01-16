@@ -6,17 +6,23 @@ const { Arc, Html, Line } = Guide;
 
 const defaultFormatter = val => {
   switch (val) {
-    case '2':
+    case '0':
+      return '0';
+
+    case '10':
       return '优';
 
-    case '4':
+    case '20':
       return '良';
 
-    case '6':
-      return '中';
+    case '30':
+      return '轻度';
 
-    case '8':
-      return '差';
+    case '40':
+      return '中度';
+
+    case '50':
+    return '重度';
 
     default:
       return '';
@@ -71,7 +77,7 @@ const Gauge = props => {
     value: {
       type: 'linear',
       min: 0,
-      max: 500,
+      max: 50,
       tickCount: 6,
       nice: true,
     },
@@ -91,7 +97,7 @@ const Gauge = props => {
   </div>`;
 
   const textStyle = {
-    fontSize: 12,
+    fontSize: 20,
     fill: 'rgba(0, 0, 0, 0.65)',
     textAlign: 'center',
   };
@@ -112,9 +118,9 @@ const Gauge = props => {
         }}
       />
       <Guide>
-        <Line
-          start={[50, 1.00]}
-          end={[50, 0.95]}
+        {/* <Line
+          start={[15, 0.905]}
+          end={[15, 0.85]}
           lineStyle={{
             stroke: color,
             lineDash: undefined,
@@ -122,8 +128,8 @@ const Gauge = props => {
           }}
         />
         <Line
-          start={[100, 1.00]}
-          end={[100, 0.95]}
+          start={[5, 0.905]}
+          end={[5, 0.85]}
           lineStyle={{
             stroke: color,
             lineDash: undefined,
@@ -131,8 +137,8 @@ const Gauge = props => {
           }}
         />
         <Line
-          start={[150, 1.00]}
-          end={[150, 0.95]}
+          start={[7, 0.905]}
+          end={[7, 0.85]}
           lineStyle={{
             stroke: color,
             lineDash: undefined,
@@ -140,21 +146,13 @@ const Gauge = props => {
           }}
         />
         <Arc
-          start={[200, 1.00]}
-          end={[200, 0.95]}
+          start={[0, 0.965]}
+          end={[10, 0.965]}
           style={{
             stroke: bgColor,
             lineWidth: 10,
           }}
-        />
-        <Arc
-          start={[300, 1.00]}
-          end={[300, 0.95]}
-          style={{
-            stroke: bgColor,
-            lineWidth: 10,
-          }}
-        />
+        /> */}
         <Arc
           start={[0, 0.965]}
           end={[data[0].value, 0.965]}

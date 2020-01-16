@@ -7,25 +7,27 @@ const Model = {
   },
   effects: {
     *update({ payload } , { put }) {
-      console.log('here',payload);
       yield put({
         type: 'changeData',
         payload: payload,
       });
     },
-    
-    *update({ payload } , { put }) {
-        console.log('here',payload);
-        yield put({
-          type: 'changeData',
-          payload: payload,
-        });
-      },
+
+    // *store({ payload } , { put }) {
+    //     yield put({
+    //       type: 'service/storeData',
+    //       payload: payload,
+    //     });
+    //   },
+    store({payload}){
+        let i=1
+        localStorage.setItem(i,JSON.stringify(payload))
+        i++
+    }
   },
 
   reducers: {
     changeData(state,{ payload }) {
-     console.log(payload, 'here again')
       return {
           ...state,
           pm: payload.pm,
@@ -37,3 +39,13 @@ const Model = {
 };
 
 export default Model;
+
+const getValue=()=>{
+    
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i); 
+        console.log(key);
+        console.log(localStorage.getItem(key));
+        
+    }
+}
