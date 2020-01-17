@@ -101,7 +101,7 @@ class DashboardMonitor extends Component {
                   <Thermometer
                     theme="light"
                     value={tem}
-                    max="60"
+                    max="30"
                     steps="3"
                     format="°C"
                     size="large"
