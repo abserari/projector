@@ -3,6 +3,8 @@ import { connect } from 'dva';
 import { Row, Col, InputNumber, Button, Modal, Form, Input } from 'antd';
 import axios from 'axios';
 
+import config from '../../../../../../config/defaultSettings';
+
 const AddFaceForm = Form.create({ name: 'add_face_form' })(
   class extends React.Component {
     render() {
@@ -87,7 +89,7 @@ class Controller extends Component {
       }
       if (value.ImageUrl && !value.Content) {
         await axios
-          .post('http://192.168.0.121:7001/image/add', {
+          .post(`http://${config.remoteIp}:7001/image/add`, {
             ...value,
           })
           .then(resp => {
@@ -100,7 +102,7 @@ class Controller extends Component {
 
       if (value.Content && !value.ImageUrl) {
         await axios
-          .post('http://192.168.0.121:7001/image/addBase', {
+          .post(`http://${config.remoteIp}:7001/image/addBase`, {
             ...value,
           })
           .then(resp => {
@@ -139,7 +141,7 @@ class Controller extends Component {
         return;
       }
       await axios
-        .post('http://192.168.0.121:7001/image/destroy', {
+        .post(`http://${config.remoteIp}:7001/image/destroy`, {
           Person: value.Person,
           Image: value.Image,
         })
