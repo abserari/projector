@@ -53,7 +53,7 @@ async function face(ctx) {
         });
         return
       }
-      if (result.Data[0].score < 0.3) {
+      if (result.Data[0].score < 0.4) {
         return
       }
       clearTimeout(j)
