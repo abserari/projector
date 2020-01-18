@@ -19,6 +19,8 @@ const accessKeyId = 'LTAI4FcUTY6C6mReK4Eq8Bqz'
 const accessKeySecret = 'WWwUZiaub9v17retzjuF6AmxcuEJ38'
 const aliyunEndpoint = 'https://face.cn-shanghai.aliyuncs.com'
 
+var myDate = new Date();
+
 
 async function face(ctx) {
   const client = new Core({
@@ -54,18 +56,19 @@ async function face(ctx) {
         return
       }
       if (result.Data[0].score < 0.4) {
+        console.log('too low score : '+ result.Data[0].score)
         return
       }
       clearTimeout(j)
 
-      // var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      // fs.writeFile(`../image/${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
-      //   if (err) {
-      //     console.log(err);
-      //   } else {
-      //   }
-      // });
-      // console.log('face yes ------------------- '+result.Data[0].score)
+      var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
+      fs.writeFile(`../image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+        }
+      });
+      console.log('face yes ------------------- '+result.Data[0].score)
 
       ctx.logger.info(`This image ${result.Data[0].person} score is ${result.Data[0].score}`)
       // 3. get personinfo from person id
@@ -141,7 +144,6 @@ class ImageInfoController extends Controller {
       }
       return info
     })
-
     ctx.body = result
     ctx.status = result.status
   }
