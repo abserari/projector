@@ -16,13 +16,13 @@ const defaultFormatter = val => {
       return '良';
 
     case '18':
-      return '轻度   ';
+      return '轻度    ';
 
     case '24':
-      return '中度   ';
+      return '中度    ';
       
     case '30':
-    return '重度   ';
+    return '重度    ';
 
     default:
       return '';
@@ -90,14 +90,15 @@ const Gauge = props => {
 
   const renderHtml = () => `
   <div style="width: 300px;text-align: center;font-size: 12px!important;">
-    <div style="font-size: 14px; color: rgba(0,0,0,0.43);margin: 0;">${title}</div>
-    <div style="font-size: 24px;color: rgba(0,0,0,0.85);margin: 0;">
+    <div style="font-size: 0px; color: rgba(0,0,0,0.43);margin: 0;">${title}</div>
+    <br></br>
+    <div style="font-size: 30px;color: rgba(0,0,0,0.85);margin: 0;">
       ${(data[0].value * 10).toFixed(2)}
     </div>
   </div>`;
 
   const textStyle = {
-    fontSize: 20,
+    fontSize: 25,
     fill: 'rgba(0, 0, 0, 0.65)',
     textAlign: 'center',
   };
