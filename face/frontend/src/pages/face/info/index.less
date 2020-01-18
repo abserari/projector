@@ -10,7 +10,7 @@
 
 .head {
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 6vh;
 }
 
 .head_content {
@@ -43,4 +43,21 @@
   white-space: 'pre-wrap';
   font-size: 3.2vh;
   font-weight: 600;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
 }

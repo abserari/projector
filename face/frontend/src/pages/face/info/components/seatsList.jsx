@@ -1,12 +1,13 @@
 import { Component } from 'react';
 import { Row } from 'antd';
-import withRouter from 'umi/withRouter';
-import router from 'umi/router';
 
-import styles from './index.less';
-import Seat from './components/seat';
+import styles from './seatList.less';
+import Seat from './seat';
 
 class Seats extends Component {
+  constructor(props) {
+    super(props);
+  }
   state = {
     seatData: [],
     person: {
@@ -16,11 +17,14 @@ class Seats extends Component {
   };
 
   componentWillMount() {
-    const {
-      location: {
-        query: { person },
-      },
-    } = this.props;
+    // const {
+    //   location: {
+    //     query: { person },
+    //   },
+    // } = this.props;
+    const person = {
+      seat: '2 排 13 座',
+    };
     let seat = person.seat
       .replace(/[^0-9]/gi, ' ')
       .split(' ')
@@ -33,16 +37,6 @@ class Seats extends Component {
         location: [+seat[0] - 1, +seat[1] - 1],
       },
     });
-
-    this.routeTo();
-  }
-
-  routeTo() {
-    setTimeout(() => {
-      router.push({
-        pathname: '/face/info',
-      });
-    }, 2000);
   }
 
   renderSeats() {
@@ -102,17 +96,8 @@ class Seats extends Component {
   }
 
   render() {
-    return (
-      <div className={styles.background}>
-        <Row className={styles.head}>
-          <p className={styles.head_content}>
-            国网保定供电公司九届三次职工（会员）代表大会暨 2020 年工作会议
-          </p>
-        </Row>
-        {this.renderSeats()}
-      </div>
-    );
+    return <div className={styles.background}>{this.renderSeats()}</div>;
   }
 }
 
-export default withRouter(Seats);
+export default Seats;

@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Row, Col, Card } from 'antd';
 import styles from './seat.less';
 
 class Seat extends Component {

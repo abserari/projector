@@ -9,14 +9,13 @@ import PersonList from './components/personInfo';
 import Controller from './components/control';
 import Mark from './components/mark';
 
+import config from '../../../../config/defaultSettings';
+
 const faceapi = require('face-api.js');
 const emitter = require('emitter-io');
 
-const messageEmitterKey = 'DdYjd8w_zH4UTj3OLWOqM8kSmbk9c68H';
-const messageChannel = 'personinfo';
-const minConfidence = 0.5;
-
 const getFaceDetectorOptions = () => {
+  let minConfidence = config.minConfidence;
   return new faceapi.SsdMobilenetv1Options({ minConfidence });
 };
 let detections = [];
@@ -29,7 +28,7 @@ class Face extends Component {
   };
 
   async componentDidMount() {
-    await faceapi.loadSsdMobilenetv1Model('http://127.0.0.1:9090');
+    await faceapi.loadSsdMobilenetv1Model(`http://${config.localIp}:9090`);
     await this.openWebcam();
     const video = document.getElementById('inputVideo');
     video.srcObject = this.state.stream;
@@ -37,10 +36,10 @@ class Face extends Component {
   }
 
   getMessage = that => {
-    const client = emitter.connect({ host: '192.168.0.121', port: '8080' });
+    const client = emitter.connect({ host: `${config.remoteIp}`, port: '8080' });
     client.subscribe({
-      key: messageEmitterKey,
-      channel: messageChannel,
+      key: config.messageEmitterKey,
+      channel: config.messageChannel,
     });
 
     client.on('message', function(msg) {
@@ -150,7 +149,7 @@ class Face extends Component {
       prama.push(image.slice(22));
     });
     await axios
-      .post('http://192.168.0.121:7001/image', {
+      .post(`http://${config.remoteIp}:7001/image`, {
         imageurl: [...prama],
       })
       .then(resp => {})

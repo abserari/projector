@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import { Row, Col, Card, Button } from 'antd';
 
 import styles from './index.less';
+import config from '../../../../../../config/defaultSettings';
 
 class PersonInfo extends Component {
   modifyCurrentPerson(data) {
@@ -28,7 +29,7 @@ class PersonInfo extends Component {
           <Col span={3}>
             <img
               className={styles.img}
-              src={`http://192.168.0.121:8081/${this.props.data.imagepath}`}
+              src={`http://${config.remoteIp}:8081/${this.props.data.imagepath}`}
             />
           </Col>
           <Col style={{ paddingLeft: '3vw' }} span={14}>

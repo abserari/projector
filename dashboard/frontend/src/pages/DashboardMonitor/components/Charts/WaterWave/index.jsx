@@ -240,8 +240,8 @@ class WaterWave extends Component {
           }}
         >
           {title && <span>{title}</span>}
-          <br></br><br></br>
-          <h1>{percent}%</h1>
+          <br></br>
+          <p style={{ fontSize :40}}>{percent}%</p>
         </div>
       </div>
     );

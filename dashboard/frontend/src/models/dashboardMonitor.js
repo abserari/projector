@@ -3,7 +3,7 @@ const Model = {
   state: {
     pm: getValue('pm'),
     tem: getValue('tem'),
-    hum: getValue('hum'),
+    hum:getValue('hum'),
   },
   effects: {
     *update({ payload } , { put }) {
@@ -34,5 +34,16 @@ export default Model;
 function getValue(key){
   const state=localStorage.getItem('data')
   const value= JSON.parse(state)
+
+  if (value == null){
+    switch(key){
+    case 'pm':
+      return 200;
+    case 'tem':
+      return 20;
+    case 'hum':
+      return 50;
+    }
+  }
   return value[key]
 }

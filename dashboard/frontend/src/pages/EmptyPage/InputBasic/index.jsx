@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input,Button } from 'antd';
 import styles from './index.less';
-import Publish from './pub.js'
+import {Publish} from '../../../services/pub_sub.js'
 
 let state = {
   pm: 0,
@@ -19,8 +19,6 @@ export default () => {
   const changeHum = (value) => {
     state.hum = value
   }
-
- 
 
   return (
     <div className={styles.container}>
