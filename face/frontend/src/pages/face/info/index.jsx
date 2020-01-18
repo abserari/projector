@@ -97,20 +97,20 @@ class Info extends Component {
                     <Col span={10}>
                       <p className={styles.detail_content}>
                         <span>姓名：</span>
-                        <span>{this.state.info.name}</span>
+                        <span>{this.state.info.name ? this.state.info.name : 'XXX'}</span>
                       </p>
                     </Col>
                     <Col span={10}>
                       <p className={styles.detail_content}>
                         <span>民族：</span>
-                        <span>{this.state.info.nation}</span>
+                        <span>{this.state.info.nation ? this.state.info.nation : 'XX'}</span>
                       </p>
                     </Col>
                   </Row>
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>职务：</span>
-                      <span>{this.state.info.position}</span>
+                      <span>{this.state.info.position ? this.state.info.position : 'XXXX'}</span>
                     </p>
                   </Row>
                   <Row className={styles.detail}>
@@ -122,13 +122,15 @@ class Info extends Component {
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>部门绩效：</span>
-                      <span>{this.state.info.performance}</span>
+                      <span>
+                        {this.state.info.performance ? this.state.info.performance : 'XXXXXX'}
+                      </span>
                     </p>
                   </Row>
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>荣誉：</span>
-                      <span>{this.state.info.honor}</span>
+                      <span>{this.state.info.honor ? this.state.info.honor : 'XXXXXXX'}</span>
                     </p>
                   </Row>
                 </Col>

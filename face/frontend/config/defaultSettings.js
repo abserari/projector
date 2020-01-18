@@ -14,7 +14,7 @@ export default {
   title: 'Ant Design Pro',
   pwa: false,
   iconfontUrl: '',
-  localIp: '192.168.0.101',
+  localIp: '192.168.0.112',
   remoteIp: '192.168.0.107',
   messageEmitterKey: 'DdYjd8w_zH4UTj3OLWOqM8kSmbk9c68H',
   messageChannel: 'personinfo',
