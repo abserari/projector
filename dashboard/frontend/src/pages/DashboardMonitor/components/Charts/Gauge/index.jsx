@@ -9,20 +9,20 @@ const defaultFormatter = val => {
     case '0':
       return '0';
 
-    case '10':
+    case '6':
       return '优';
 
-    case '20':
+    case '12':
       return '良';
 
+    case '18':
+      return '轻度   ';
+
+    case '24':
+      return '中度   ';
+      
     case '30':
-      return '轻度';
-
-    case '40':
-      return '中度';
-
-    case '50':
-    return '重度';
+    return '重度   ';
 
     default:
       return '';
@@ -77,7 +77,7 @@ const Gauge = props => {
     value: {
       type: 'linear',
       min: 0,
-      max: 50,
+      max: 30,
       tickCount: 6,
       nice: true,
     },
