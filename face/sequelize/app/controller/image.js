@@ -62,7 +62,7 @@ async function face(ctx) {
       clearTimeout(j)
 
       var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      fs.writeFile(`../image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+      fs.writeFile(`/Users/abser/image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
         if (err) {
           console.log(err);
         } else {
