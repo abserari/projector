@@ -7,6 +7,8 @@ import styles from './index.less';
 import config from '../../../../config/defaultSettings';
 import Seats from './components/seatsList';
 
+let pageTimer = {};
+
 class Info extends Component {
   state = {
     visiable: 'block',
@@ -28,12 +30,10 @@ class Info extends Component {
   getLocalStorage(that) {
     window.addEventListener('storage', e => {
       const info = JSON.parse(window.localStorage.getItem('person'));
-      console.log(info);
       if (!that.state.info) {
         that.setState({
           info: info,
         });
-
         that.changeVisiable();
       }
 
@@ -50,21 +50,31 @@ class Info extends Component {
   }
 
   changeVisiable() {
-    setTimeout(() => {
+    console.log(this.state.info);
+    if (this.state.info.seat == '主席台') {
+      console.log('here');
+      return;
+    }
+
+    pageTimer['time1'] = setTimeout(() => {
       this.setState({
         visiable: 'none',
       });
-    }, 2000);
-
-    setTimeout(() => {
+    }, 5000);
+    pageTimer['time2'] = setTimeout(() => {
       this.setState({
         visiable: 'block',
       });
-    }, 4000);
+    }, 8500);
+
+    if (this.state.info.type == 'force') {
+      for (let each in pageTimer) {
+        clearInterval(pageTimer[each]);
+      }
+    }
   }
 
   render() {
-    console.log(this.state.visiable);
     return (
       <div className={styles.background}>
         <Row className={styles.head}>
@@ -85,9 +95,9 @@ class Info extends Component {
                     <img
                       className={styles.img}
                       src={
-                        this.state.info
-                          ? `http://${config.remoteIp}:8081/${this.state.info.imagepath}`
-                          : null
+                        this.state.info.id
+                          ? `http://${config.remoteIp}:8081/${this.state.info.id}.jpg`
+                          : '../../../assets/default.png'
                       }
                     />
                   </div>
@@ -110,27 +120,25 @@ class Info extends Component {
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>职务：</span>
-                      <span>{this.state.info.position ? this.state.info.position : 'XXXX'}</span>
+                      <span>{this.state.info.duty ? this.state.info.duty : 'XXXX'}</span>
                     </p>
                   </Row>
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>座位：</span>
-                      <span>{this.state.info.seat ? this.state.info.seat : '2 排 13 座'}</span>
+                      <span>{this.state.info.seat ? this.state.info.seat : ''}</span>
                     </p>
                   </Row>
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>部门绩效：</span>
-                      <span>
-                        {this.state.info.performance ? this.state.info.performance : 'XXXXXX'}
-                      </span>
+                      <span>{this.state.info.performance ? this.state.info.performance : ''}</span>
                     </p>
                   </Row>
                   <Row className={styles.detail}>
                     <p className={styles.detail_content}>
                       <span>荣誉：</span>
-                      <span>{this.state.info.honor ? this.state.info.honor : 'XXXXXXX'}</span>
+                      <span>{this.state.info.glory ? this.state.info.glory : ''}</span>
                     </p>
                   </Row>
                 </Col>
@@ -138,7 +146,7 @@ class Info extends Component {
             </div>
           ) : (
             <div key={2}>
-              <Seats></Seats>
+              <Seats person={this.state.info}></Seats>
             </div>
           )}
         </ReactCSSTransitionGroup>

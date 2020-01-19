@@ -87,11 +87,6 @@ export default {
           path: '/face/info',
           component: './face/info',
         },
-        {
-          name: 'seats',
-          path: '/face/seats',
-          component: './face/seats',
-        },
       ],
     },
     {

@@ -8,6 +8,7 @@ import config from '../../../../../../config/defaultSettings';
 class PersonInfo extends Component {
   modifyCurrentPerson(data) {
     const { dispatch } = this.props.that.props;
+    data.type = 'force';
     dispatch({
       type: 'personInfo/modifyCurrentPerson',
       payload: data,
@@ -29,7 +30,7 @@ class PersonInfo extends Component {
           <Col span={3}>
             <img
               className={styles.img}
-              src={`http://${config.remoteIp}:8081/${this.props.data.imagepath}`}
+              src={`http://${config.remoteIp}:8081/${this.props.data.id}.jpg`}
             />
           </Col>
           <Col style={{ paddingLeft: '3vw' }} span={14}>
@@ -43,10 +44,10 @@ class PersonInfo extends Component {
               type="primary"
               onClick={() => this.modifyCurrentPerson(this.props.data)}
             >
-              替换当前
+              确认
             </Button>
             <Button className={styles.button} onClick={() => this.markPerson(this.props.data)}>
-              标记
+              取消
             </Button>
           </Col>
         </Row>

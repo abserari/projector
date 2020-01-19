@@ -7,8 +7,13 @@ class Seat extends Component {
   }
 
   render() {
+    console.log();
     return (
-      <div className={`${styles.seat} ${this.props.select ? styles.background : ''}`}>
+      <div
+        className={`${styles.seat} ${this.props.select ? styles.background : ''} ${
+          this.props.index == 5 || this.props.index == 15 ? styles.seat_margin : null
+        }`}
+      >
         {this.props.picked ? this.props.name : ''}
       </div>
     );

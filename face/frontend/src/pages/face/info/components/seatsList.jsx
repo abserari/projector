@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Row } from 'antd';
 
 import styles from './seatList.less';
 import Seat from './seat';
+import seatsInfo from '../../../../assets/seats';
 
 class Seats extends Component {
   constructor(props) {
@@ -17,15 +17,7 @@ class Seats extends Component {
   };
 
   componentWillMount() {
-    // const {
-    //   location: {
-    //     query: { person },
-    //   },
-    // } = this.props;
-    const person = {
-      seat: '2 排 13 座',
-    };
-    let seat = person.seat
+    let seat = this.props.person.seat
       .replace(/[^0-9]/gi, ' ')
       .split(' ')
       .filter(function(e) {
@@ -33,7 +25,7 @@ class Seats extends Component {
       });
     this.setState({
       person: {
-        name: person.name,
+        name: this.props.person.name,
         location: [+seat[0] - 1, +seat[1] - 1],
       },
     });
@@ -47,30 +39,51 @@ class Seats extends Component {
 
     if (this.state.person) {
       seats[this.state.person.location[0]].props.children[this.state.person.location[1]] = (
-        <Seat name={this.state.person.name} select={true} picked={true}></Seat>
+        <Seat
+          select={true}
+          index={this.state.person.location[1]}
+          picked={true}
+          name={seatsInfo[this.state.person.location[0]][this.state.person.location[1]]}
+        ></Seat>
       );
 
       if (this.state.person.location[0] - 1 >= 0) {
         seats[this.state.person.location[0] - 1].props.children[this.state.person.location[1]] = (
-          <Seat name={this.state.person.name} picked={true}></Seat>
+          <Seat
+            picked={true}
+            index={this.state.person.location[1]}
+            name={seatsInfo[this.state.person.location[0] - 1][this.state.person.location[1]]}
+          ></Seat>
         );
       }
 
       if (this.state.person.location[0] + 1 <= 17) {
         seats[this.state.person.location[0] + 1].props.children[this.state.person.location[1]] = (
-          <Seat name={this.state.person.name} picked={true}></Seat>
+          <Seat
+            picked={true}
+            index={this.state.person.location[1]}
+            name={seatsInfo[this.state.person.location[0] + 1][this.state.person.location[1]]}
+          ></Seat>
         );
       }
 
       if (this.state.person.location[1] - 1 >= 0) {
         seats[this.state.person.location[0]].props.children[this.state.person.location[1] - 1] = (
-          <Seat name={this.state.person.name} picked={true}></Seat>
+          <Seat
+            picked={true}
+            index={this.state.person.location[1] - 1}
+            name={seatsInfo[this.state.person.location[0]][this.state.person.location[1] - 1]}
+          ></Seat>
         );
       }
 
       if (this.state.person.location[1] + 1 <= 21) {
         seats[this.state.person.location[0]].props.children[this.state.person.location[1] + 1] = (
-          <Seat name={this.state.person.name} picked={true}></Seat>
+          <Seat
+            picked={true}
+            index={this.state.person.location[1] + 1}
+            name={seatsInfo[this.state.person.location[0]][this.state.person.location[1] + 1]}
+          ></Seat>
         );
       }
     }
@@ -81,15 +94,11 @@ class Seats extends Component {
   renderRowSeats() {
     let seats = [];
     for (let i = 0; i < 22; i++) {
-      if (i === 5 || i === 15) {
-        seats.push(
-          <div className={styles.seat_margin}>
-            <Seat></Seat>
-          </div>,
-        );
-      } else {
-        seats.push(<Seat></Seat>);
+      if (i == 5 || i == 15) {
+        seats.push(<Seat index={i}></Seat>);
+        continue;
       }
+      seats.push(<Seat></Seat>);
     }
 
     return <div className={styles.row_seats}>{seats}</div>;

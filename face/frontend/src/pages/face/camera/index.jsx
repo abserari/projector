@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Button } from 'antd';
 import { connect } from 'dva';
 
 import axios from 'axios';
@@ -43,12 +43,11 @@ class Face extends Component {
     });
 
     client.on('message', function(msg) {
-      if (msg == 'timeout') {
-        return;
-      }
       const { personInfo, dispatch } = that.props;
       const person = JSON.parse(msg.asString());
-
+      if (person == 'timeout') {
+        return;
+      }
       dispatch({
         type: 'personInfo/modifyTimeSpend',
         payload: person.timespend,
