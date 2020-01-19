@@ -48,12 +48,17 @@ async function faceToaliyun() {
             }
             return info
         })
-        console.log(result)
-        if (result.status == 400) {
-            info.push(i+result.result.name)
+
+        if (result.status == 400 && result.result.name != 'AddImageErrorError') {
+            console.log("i: failed")
+            info.push(i)
+            console.log(result.result.name)
+            console.log('length is : ' + info.length)
         }
     }
 }
 
 faceToaliyun()
-console.log(info.length)
+for (let j = 0 ; j< info.length ; j++) {
+    console.log(info[j])
+}
