@@ -21,7 +21,7 @@ class DashboardMonitor extends Component {
       <GridContent>
         <div style={{background:'#fff8cd'}}>
         <React.Fragment>
-          <Row gutter={0}>
+          <Row gutter={0} style={{ height: '50vh' }}>
             <Col
               xl={24}
               lg={24}
@@ -52,7 +52,7 @@ class DashboardMonitor extends Component {
               </Card>
             </Col>
           </Row>
-          <Row gutter={0}>
+          <Row gutter={0} style={{ height: '50vh' }}>
             <Col
               xl={8}
               lg={24}
