@@ -191,6 +191,14 @@ class Controller extends Component {
     });
   }
 
+  showPage() {
+    let storage = window.localStorage;
+    let payload = {
+      change: true,
+    };
+    storage.setItem('onchange', JSON.stringify(payload));
+  }
+
   render() {
     return (
       <Row type="flex" justify="start" gutter={[60, 16]}>
@@ -228,6 +236,9 @@ class Controller extends Component {
         </Col>
         <Col>
           <Button onClick={this.showDeleteFaceModal.bind(this)}>删除图片</Button>
+        </Col>
+        <Col>
+          <Button onClick={this.showPage.bind(this)}>展示首页</Button>
         </Col>
         <AddFaceForm
           wrappedComponentRef={this.saveAddFormRef}

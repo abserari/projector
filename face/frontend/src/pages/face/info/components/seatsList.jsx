@@ -10,25 +10,23 @@ class Seats extends Component {
   }
   state = {
     seatData: [],
-    person: {
-      name: '李劲松',
-      location: [0, 0],
-    },
   };
 
   componentWillMount() {
-    let seat = this.props.person.seat
-      .replace(/[^0-9]/gi, ' ')
-      .split(' ')
-      .filter(function(e) {
-        return e.replace(/(\r\n|\n|\r)/gm, '');
+    if (this.props.person) {
+      let seat = this.props.person.seat
+        .replace(/[^0-9]/gi, ' ')
+        .split(' ')
+        .filter(function(e) {
+          return e.replace(/(\r\n|\n|\r)/gm, '');
+        });
+      this.setState({
+        person: {
+          name: this.props.person.name,
+          location: [+seat[0] - 1, +seat[1] - 1],
+        },
       });
-    this.setState({
-      person: {
-        name: this.props.person.name,
-        location: [+seat[0] - 1, +seat[1] - 1],
-      },
-    });
+    }
   }
 
   renderSeats() {

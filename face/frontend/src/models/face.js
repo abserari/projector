@@ -1,7 +1,7 @@
 const FaceModel = {
   namespace: 'face',
   state: {
-    area: 20000,
+    area: 5000,
     score: 0.5,
     offsetX: 40,
   },

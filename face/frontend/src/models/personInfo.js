@@ -45,6 +45,7 @@ const PersonInfoModel = {
 
   reducers: {
     modifyPersons(state, { payload }) {
+      console.log(person);
       const person = state.persons.splice(payload, 1)[0];
       state.persons.unshift(person);
       let storage = window.localStorage;
@@ -70,6 +71,7 @@ const PersonInfoModel = {
     },
     modifyCurrent(state, { payload }) {
       let storage = window.localStorage;
+      payload.modify = true;
       storage.setItem('person', JSON.stringify(payload));
       return {
         ...state,
