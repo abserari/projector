@@ -6,7 +6,7 @@ import ReactAwesomeClock from 'react-awesome-clock';
 import { WaterWave, Gauge } from './components/Charts';
 import Thermometer from 'react-thermometer-component';
 import { Sub } from '../../services/pub_sub.js'
-
+ 
 class DashboardMonitor extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
@@ -68,12 +68,12 @@ class DashboardMonitor extends Component {
                 bodyStyle={{
                   textAlign: 'center',
                 }}
-                style={{background: '#eadea6'}}
+                style={{background: '#eadea6', paddingBottom: '0.9vh'}}
               >
                 <div class="contain">
-                  <p style={{ fontSize: titleSize }}>湿度</p>
+                  <p style={{ fontSize: titleSize, height: '7.4vh' }}>湿度</p>
                 </div>
-                <WaterWave height={200} percent={hum} />
+                <WaterWave height={220} percent={hum} />
               </Card>
             </Col>
             <Col
@@ -92,9 +92,9 @@ class DashboardMonitor extends Component {
                   alignContent: 'center',
                 }}
                 bordered={true}
-                style={{background: '#eadea6'}}
+                style={{background: '#eadea6', paddingBottom: '1vh'}}
               >
-                <div class="contain">
+                <div class="contain" style={{height: '13vh'}}>
                   <p style={{ fontSize: titleSize }}>温度</p>
                 </div>
                 <div align="center">
@@ -125,12 +125,12 @@ class DashboardMonitor extends Component {
                 bodyStyle={{
                   textAlign: 'center',
                 }}
-                style={{background: '#eadea6'}}
+                style={{background: '#eadea6', paddingBottom: '2.9vh'}}
               >
-                <div class="contain">
+                <div class="contain" style={{height: '11vh'}}>
                   <p style={{ fontSize: titleSize }}>PM2.5</p>
                 </div>
-                <Gauge title="PM2.5" height={255} percent={pm} />
+                <Gauge title="PM2.5" height={255} percent={pm} style={{marginBottom: '10vh'}} />
               </Card>
             </Col>
           </Row>
