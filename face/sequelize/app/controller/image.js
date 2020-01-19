@@ -55,11 +55,6 @@ async function face(ctx) {
         });
         return
       }
-      if (result.Data[0].score < 0.4) {
-        console.log('too low score : '+ result.Data[0].score)
-        return
-      }
-      clearTimeout(j)
 
       var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
       fs.writeFile(`/Users/abser/image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
@@ -68,7 +63,13 @@ async function face(ctx) {
         } else {
         }
       });
+      
       console.log('face yes ------------------- '+result.Data[0].score)
+      if (result.Data[0].score < 0.5) {
+        console.log('too low score : '+ result.Data[0].score)
+        return
+      }
+      clearTimeout(j)
 
       ctx.logger.info(`This image ${result.Data[0].person} score is ${result.Data[0].score}`)
       // 3. get personinfo from person id
