@@ -63,13 +63,14 @@ async function face(ctx) {
         } else {
         }
       });
-      
-      console.log('face yes ------------------- '+result.Data[0].score)
-      if (result.Data[0].score < 0.5) {
-        console.log('too low score : '+ result.Data[0].score)
+
+      if (result.Data[0].score < 0.3) {
+        console.log(result.Data[0].person + ' too low score : '+ result.Data[0].score)
         return
       }
       clearTimeout(j)
+
+      console.log(result.Data[0].person + ' face yes ------------------- '+result.Data[0].score)
 
       ctx.logger.info(`This image ${result.Data[0].person} score is ${result.Data[0].score}`)
       // 3. get personinfo from person id
