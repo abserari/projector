@@ -19,6 +19,10 @@ const accessKeyId = 'LTAI4FcUTY6C6mReK4Eq8Bqz'
 const accessKeySecret = 'WWwUZiaub9v17retzjuF6AmxcuEJ38'
 const aliyunEndpoint = 'https://face.cn-shanghai.aliyuncs.com'
 
+// the image similarity below AliyunSimilarity would not be return to frontend.
+const AliyunSimilarity = 0.5
+
+// a date use to store image
 var myDate = new Date();
 
 
@@ -57,14 +61,14 @@ async function face(ctx) {
       }
 
       var dataBuffer = new Buffer(ctx.request.body.imageurl[i], 'base64');
-      fs.writeFile(`/Users/abser/image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
+      fs.writeFile(`../image/${myDate.toLocaleTimeString()}--${result.Data[0].person}-${result.Data[0].score}.png`, dataBuffer, function (err) {
         if (err) {
           console.log(err);
         } else {
         }
       });
 
-      if (result.Data[0].score < 0.42) {
+      if (result.Data[0].score < AliyunSimilarity) {
         console.log(result.Data[0].person + ' too low score : '+ result.Data[0].score)
         return
       }
