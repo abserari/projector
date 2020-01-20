@@ -1,5 +1,7 @@
 # projector
-Face detect and IOT data display, use for face recognized and return their info to display
+Face detect and IOT data display, use for face recognized and return their info to display.
+
+[The brief introduction of optional stroke](https://www.yuque.com/abs/homework/pt8mz7)
 
 ## TechStack 
 - antdesign pro
