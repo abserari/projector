@@ -78,6 +78,18 @@ User use resultful api.
 ## Dashboard Usage
 ![running](./imageforreadme/dashboard.jpg)
 
+- run frontend 
+```bash
+cd  dashboard/frontend 
+npm install
+npm start
+```
+- change the data
+http://localhost:8000/submit
+
+- display the data
+http://localhost:8000/dashboardmonitor
+
 ## TechStack 
 - UmiJS for umi create
 - npm / cnpm for bag control
