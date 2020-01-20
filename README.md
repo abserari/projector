@@ -101,7 +101,7 @@ http://localhost:8000/dashboardmonitor
 
 ## TechStack 
 - UmiJS for umi create
-- npm / cnpm for bag control
+- npm / yarn for bag control
 - emitter for date transmission
 - Localstorage 
 - Ant Design Pro for page design
