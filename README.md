@@ -14,6 +14,8 @@ Face detect and IOT data display, use for face recognized and return their info 
 
 ## Face Usage
 ![preview](./imageforreadme/facePreview.png)
+
+![running](./imageforreadme/running.png)
 - use own aliyun [face api](https://help.aliyun.com/document_detail/118565.html?spm=a2c4g.11186623.6.558.581f5a17vK1cli#h2-deleteface5) apikey
 
 - run emitter and mysql in [face/mysql&emitter](https://github.com/yhyddr/projector/blob/master/face/mysql%26emitter/README.md)
