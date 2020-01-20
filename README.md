@@ -78,4 +78,10 @@ User use resultful api.
 ## Dashboard Usage
 ![running](./imageforreadme/dashboard.jpg)
 
-## Contributor
+## TechStack 
+- UmiJS for umi create
+- npm / cnpm for bag control
+- emitter for date transmission
+- Localstorage 
+- Ant Design Pro for page design
+- GitHub for components
