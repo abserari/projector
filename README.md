@@ -66,6 +66,15 @@ go run fileserver.go
 at top of [face/sequelize/app/controller/image.js](https://github.com/yhyddr/projector/blob/master/face/sequelize/app/controller/image.js)
 
 
+### Image API
+![Add Image](./imageforreadme/api/addImageToAliyun.png)
+![Delete Image](./imageforreadme/api/deleteImage.png)
+![List Image](./imageforreadme/api/listImage.png)
+
+### User API
+User use resultful api.
+![Query Info](./imageforreadme/api/queryUserInfo.png)
+
 ## Dashboard Usage
 ![running](./imageforreadme/dashboard.jpg)
 
