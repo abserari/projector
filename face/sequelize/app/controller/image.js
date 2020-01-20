@@ -64,7 +64,7 @@ async function face(ctx) {
         }
       });
 
-      if (result.Data[0].score < 0.3) {
+      if (result.Data[0].score < 0.42) {
         console.log(result.Data[0].person + ' too low score : '+ result.Data[0].score)
         return
       }

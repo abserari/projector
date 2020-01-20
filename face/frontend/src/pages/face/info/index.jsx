@@ -79,7 +79,7 @@ class Info extends Component {
   render() {
     return (
       <div className={styles.background}>
-        {this.state.showPage ? (
+        {JSON.stringify(this.state.info) == '{}' ? (
           <div className={styles.banding}></div>
         ) : (
           <div>

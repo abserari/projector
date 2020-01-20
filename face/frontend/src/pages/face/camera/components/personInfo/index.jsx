@@ -35,7 +35,7 @@ class PersonInfo extends Component {
           </Col>
           <Col style={{ paddingLeft: '3vw' }} span={14}>
             <p>姓名：{this.props.data.name}</p>
-            <p>职位：{'国网保定供电公司办公室'}</p>
+            <p>职位：{this.props.data.duty}</p>
             <p>相似度：{this.props.data.score}</p>
           </Col>
           <Col span={6}>
