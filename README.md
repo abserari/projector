@@ -77,6 +77,7 @@ User use resultful api.
 
 ## Dashboard Usage
 ![running](./imageforreadme/dashboard.jpg)
+![running](./imageforreadme/submitpag.png)
 
 - run frontend 
 ```bash
@@ -89,6 +90,10 @@ http://localhost:8000/submit
 
 - display the data
 http://localhost:8000/dashboardmonitor
+
+```bash
+# we can run this project in localhost
+```
 
 ## TechStack 
 - UmiJS for umi create
