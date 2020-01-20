@@ -2,4 +2,10 @@
 
 ## Usage
 
-npm run start 
+```bash
+cd sequelize 
+
+npm install
+
+npm run dev 
+```
