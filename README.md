@@ -86,10 +86,14 @@ npm install
 npm start
 ```
 - change the data
+```
 http://localhost:8000/submit
+```
 
 - display the data
+```
 http://localhost:8000/dashboardmonitor
+```
 
 ```bash
 # we can run this project in localhost
