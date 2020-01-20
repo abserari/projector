@@ -63,4 +63,8 @@ go run fileserver.go
 ### Config with face detect
 at top of [face/sequelize/app/controller/image.js](https://github.com/yhyddr/projector/blob/master/face/sequelize/app/controller/image.js)
 
+
+## Dashboard Usage
+![running](./imageforreadme/dashboard.jpg)
+
 ## Contributor
